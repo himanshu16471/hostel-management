@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shree Jain Oswal Boarding Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+if (localStorage.getItem("loggedIn") !== "true") {
+  window.location.href = "login.html";
+}
+</script>
+<div class="container">
+  <div class="sidebar">
+    <a href="#" onclick="logout()">🚪 Logout</a>
+  <h2>🏨 SJOB<br>Database</h2>
+
+  <a class="active" href="#">📊 Dashboard</a>
+  <a href="#">👨‍🎓 Students</a>
+  <a href="#">🏠 Rooms</a>
+
+  <p class="sidebar-footer">SJOB Hostel ERP</p>
+</div>
+
+  <div class="main">
+    <h1>Shree Jain Oswal Boarding Management</h1>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Total Students</h3>
+        <p id="total">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Occupied Beds</h3>
+        <p id="occupied">0</p>
+      </div>
+
+     
+<div class="card">
+  <h3>Available Beds</h3>
+  <p id="available">0</p>
+</div>
+<div class="emptyBedsPanel">
+  <h2>🟢 Empty Beds</h2>
+  <div id="emptyBedsList"></div>
+</div>
+
+    </div>  
+<div class="inputBox">
+<input id="name" placeholder="👨‍🎓 Student Name">
+<input id="room" placeholder="🏠 Room Number">
+<input id="bed" placeholder="🛏 Bed Number">
+<input id="roomSearch" placeholder="🔍 Find Room">
+<button class="btn go" onclick="goToRoom()">Go</button>
+<input id="studentSearch" placeholder="👨‍🎓 Enter Student Name">
+<button onclick="findStudent()">🔍 Find Student</button>
+
+<button class="btn primary" onclick="addStudent()">+ Allocate Bed</button>
+</div>
+
+<div class="inputBox">
+  
+  <div id="table"></div>
+</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+function logout() {
+  localStorage.removeItem("loggedIn");
+  window.location.href = "login.html";
+}
+</script>
+</body>
+</html>
