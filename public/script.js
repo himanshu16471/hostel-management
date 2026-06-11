@@ -183,8 +183,15 @@ function showStudentInfo(id) {
   document.getElementById("modalName").innerText = student.name || "VACANT";
   document.getElementById("modalRoom").innerText = student.room || "-";
   document.getElementById("modalBed").innerText = student.bed || "-";
+
   document.getElementById("modalMobile").innerText =
     student.mobile || "Not added";
+
+  document.getElementById("modalCity").innerText =
+    student.city || "Not added";
+
+  document.getElementById("modalFees").innerText =
+    student.outstandingFees || "0";
 
   document.getElementById("studentModal").style.display = "flex";
 }

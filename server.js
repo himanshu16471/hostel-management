@@ -29,6 +29,8 @@ function loadStudentsFromExcel() {
 const bed = row[4];
 const name = row[5];
 const mobile = row[6];
+const city = row[7];
+const outstandingFees = row[8];
 
 if (currentRoom && bed && name) {
   students.push({
@@ -37,6 +39,8 @@ if (currentRoom && bed && name) {
     bed: String(bed),
     name: String(name).trim(),
     mobile: String(mobile || ""),
+    city: String(city || ""),
+  outstandingFees: String(outstandingFees || ""),
     vacant: String(name).toUpperCase().includes("VACATE")
   });
 }

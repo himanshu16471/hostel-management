@@ -5,6 +5,8 @@
     "bed": "1",
     "name": "NAKUL PARAKH",
     "mobile": "1234567891",
+    "city": "dhule",
+    "outstandingFees": "10000",
     "vacant": false
   },
   {
@@ -13,6 +15,8 @@
     "bed": "2",
     "name": "BHAVISHYA JAIN",
     "mobile": "1234567892",
+    "city": "dhule",
+    "outstandingFees": "10001",
     "vacant": false
   },
   {
@@ -21,6 +25,8 @@
     "bed": "3",
     "name": "NITYAM PARAKH",
     "mobile": "1234567893",
+    "city": "dhule",
+    "outstandingFees": "10002",
     "vacant": false
   },
   {
@@ -29,6 +35,8 @@
     "bed": "4",
     "name": "SOHAM VIPUL JAIN",
     "mobile": "1234567894",
+    "city": "dhule",
+    "outstandingFees": "10003",
     "vacant": false
   },
   {
@@ -37,6 +45,8 @@
     "bed": "1",
     "name": "ADITYA pritesh KOTECHA",
     "mobile": "1234567895",
+    "city": "dhule",
+    "outstandingFees": "10004",
     "vacant": false
   },
   {
@@ -45,6 +55,8 @@
     "bed": "2",
     "name": "HARDIK BORA",
     "mobile": "1234567896",
+    "city": "dhule",
+    "outstandingFees": "10005",
     "vacant": false
   },
   {
@@ -53,6 +65,8 @@
     "bed": "3",
     "name": "MEET KOTECHA",
     "mobile": "1234567897",
+    "city": "dhule",
+    "outstandingFees": "10006",
     "vacant": false
   },
   {
@@ -61,6 +75,8 @@
     "bed": "4",
     "name": "AAYUSH PARAKH",
     "mobile": "1234567898",
+    "city": "dhule",
+    "outstandingFees": "10007",
     "vacant": false
   },
   {
@@ -69,6 +85,8 @@
     "bed": "1",
     "name": "VIRAJ SHAH",
     "mobile": "1234567899",
+    "city": "dhule",
+    "outstandingFees": "10008",
     "vacant": false
   },
   {
@@ -77,6 +95,8 @@
     "bed": "2",
     "name": "SAMYAK V. BHANDARI",
     "mobile": "1234567900",
+    "city": "dhule",
+    "outstandingFees": "10009",
     "vacant": false
   },
   {
@@ -85,6 +105,8 @@
     "bed": "3",
     "name": "ARYAN SURANA",
     "mobile": "1234567901",
+    "city": "dhule",
+    "outstandingFees": "10010",
     "vacant": false
   },
   {
@@ -93,6 +115,8 @@
     "bed": "4",
     "name": "SAMYAK S.  BHANDARI",
     "mobile": "1234567902",
+    "city": "dhule",
+    "outstandingFees": "10011",
     "vacant": false
   },
   {
@@ -101,6 +125,8 @@
     "bed": "1",
     "name": "NEEL KANKARIYA",
     "mobile": "1234567904",
+    "city": "dhule",
+    "outstandingFees": "10013",
     "vacant": false
   },
   {
@@ -109,6 +135,8 @@
     "bed": "2",
     "name": "AAGAM OSTWAL",
     "mobile": "1234567905",
+    "city": "dhule",
+    "outstandingFees": "10014",
     "vacant": false
   },
   {
@@ -117,6 +145,8 @@
     "bed": "3",
     "name": "TEJAS KOTHARI",
     "mobile": "1234567906",
+    "city": "dhule",
+    "outstandingFees": "10015",
     "vacant": false
   },
   {
@@ -125,6 +155,8 @@
     "bed": "4",
     "name": "MEHUL",
     "mobile": "1234567907",
+    "city": "dhule",
+    "outstandingFees": "10016",
     "vacant": false
   },
   {
@@ -133,6 +165,8 @@
     "bed": "1",
     "name": "RIJUL PARAKH",
     "mobile": "1234567908",
+    "city": "dhule",
+    "outstandingFees": "10017",
     "vacant": false
   },
   {
@@ -141,6 +175,8 @@
     "bed": "2",
     "name": "SIDDHESH LUNAWAT",
     "mobile": "1234567909",
+    "city": "dhule",
+    "outstandingFees": "10018",
     "vacant": false
   },
   {
@@ -149,6 +185,8 @@
     "bed": "3",
     "name": "YUG BADJATE",
     "mobile": "1234567910",
+    "city": "dhule",
+    "outstandingFees": "10019",
     "vacant": false
   },
   {
@@ -157,6 +195,8 @@
     "bed": "4",
     "name": "AKSHAY JAIN",
     "mobile": "1234567911",
+    "city": "dhule",
+    "outstandingFees": "10020",
     "vacant": false
   },
   {
@@ -165,6 +205,8 @@
     "bed": "1",
     "name": "RAJTILAK",
     "mobile": "1234567913",
+    "city": "dhule",
+    "outstandingFees": "10022",
     "vacant": false
   },
   {
@@ -173,6 +215,8 @@
     "bed": "2",
     "name": "NAMAN SACHIN JAIN",
     "mobile": "1234567914",
+    "city": "dhule",
+    "outstandingFees": "10023",
     "vacant": false
   },
   {
@@ -181,6 +225,8 @@
     "bed": "3",
     "name": "AAYUSH OSTWAL",
     "mobile": "1234567915",
+    "city": "dhule",
+    "outstandingFees": "10024",
     "vacant": false
   },
   {
@@ -189,6 +235,8 @@
     "bed": "4",
     "name": "NAMAN MAHAVIR JAIN",
     "mobile": "1234567916",
+    "city": "dhule",
+    "outstandingFees": "10025",
     "vacant": false
   },
   {
@@ -197,6 +245,8 @@
     "bed": "1",
     "name": "NAMAN JAIN",
     "mobile": "1234567917",
+    "city": "dhule",
+    "outstandingFees": "10026",
     "vacant": false
   },
   {
@@ -205,6 +255,8 @@
     "bed": "2",
     "name": "MOKSH K BURAD",
     "mobile": "1234567918",
+    "city": "dhule",
+    "outstandingFees": "10027",
     "vacant": false
   },
   {
@@ -213,6 +265,8 @@
     "bed": "3",
     "name": "DEEPAK SANCHETI",
     "mobile": "1234567919",
+    "city": "dhule",
+    "outstandingFees": "10028",
     "vacant": false
   },
   {
@@ -221,6 +275,8 @@
     "bed": "4",
     "name": "SHAURYA MUTHA",
     "mobile": "1234567920",
+    "city": "dhule",
+    "outstandingFees": "10029",
     "vacant": false
   },
   {
@@ -229,6 +285,8 @@
     "bed": "5",
     "name": "JINESHWAR",
     "mobile": "1234567921",
+    "city": "dhule",
+    "outstandingFees": "10030",
     "vacant": false
   },
   {
@@ -237,6 +295,8 @@
     "bed": "6",
     "name": "VACATE",
     "mobile": "1234567923",
+    "city": "dhule",
+    "outstandingFees": "10032",
     "vacant": true
   },
   {
@@ -245,6 +305,8 @@
     "bed": "1",
     "name": "SAYYAM SAMDADIYA",
     "mobile": "1234567924",
+    "city": "dhule",
+    "outstandingFees": "10033",
     "vacant": false
   },
   {
@@ -253,6 +315,8 @@
     "bed": "2",
     "name": "AARYAN RAHUL SANCHETI",
     "mobile": "1234567925",
+    "city": "dhule",
+    "outstandingFees": "10034",
     "vacant": false
   },
   {
@@ -261,6 +325,8 @@
     "bed": "3",
     "name": "GAUTAM CHOPDA",
     "mobile": "1234567926",
+    "city": "dhule",
+    "outstandingFees": "10035",
     "vacant": false
   },
   {
@@ -269,6 +335,8 @@
     "bed": "4",
     "name": "darshan duggad",
     "mobile": "1234567927",
+    "city": "dhule",
+    "outstandingFees": "10036",
     "vacant": false
   },
   {
@@ -277,6 +345,8 @@
     "bed": "5",
     "name": "HARSHAL PAGARIYA",
     "mobile": "1234567928",
+    "city": "dhule",
+    "outstandingFees": "10037",
     "vacant": false
   },
   {
@@ -285,6 +355,8 @@
     "bed": "6",
     "name": "AAYUSH KAMLESH JAIN",
     "mobile": "1234567929",
+    "city": "dhule",
+    "outstandingFees": "10038",
     "vacant": false
   },
   {
@@ -293,6 +365,8 @@
     "bed": "1",
     "name": "LAY SHAH",
     "mobile": "1234567930",
+    "city": "dhule",
+    "outstandingFees": "10039",
     "vacant": false
   },
   {
@@ -301,6 +375,8 @@
     "bed": "2",
     "name": "SAKSHAM KARNAWAT",
     "mobile": "1234567931",
+    "city": "dhule",
+    "outstandingFees": "10040",
     "vacant": false
   },
   {
@@ -309,6 +385,8 @@
     "bed": "3",
     "name": "PARTH DUNGARWAL",
     "mobile": "1234567932",
+    "city": "dhule",
+    "outstandingFees": "10041",
     "vacant": false
   },
   {
@@ -317,6 +395,8 @@
     "bed": "1",
     "name": "HARSH BADJATE",
     "mobile": "1234567933",
+    "city": "dhule",
+    "outstandingFees": "10042",
     "vacant": false
   },
   {
@@ -325,6 +405,8 @@
     "bed": "2",
     "name": "JEET JAIN",
     "mobile": "1234567934",
+    "city": "dhule",
+    "outstandingFees": "10043",
     "vacant": false
   },
   {
@@ -333,6 +415,8 @@
     "bed": "3",
     "name": "PRATHAMESH GUGLE",
     "mobile": "1234567935",
+    "city": "dhule",
+    "outstandingFees": "10044",
     "vacant": false
   },
   {
@@ -341,6 +425,8 @@
     "bed": "4",
     "name": "kushal MAHESHCHAND jain",
     "mobile": "1234567936",
+    "city": "dhule",
+    "outstandingFees": "10045",
     "vacant": false
   },
   {
@@ -349,6 +435,8 @@
     "bed": "5",
     "name": "pranil jain",
     "mobile": "1234567937",
+    "city": "dhule",
+    "outstandingFees": "10046",
     "vacant": false
   },
   {
@@ -357,6 +445,8 @@
     "bed": "6",
     "name": "HRIDAY JAIN",
     "mobile": "1234567938",
+    "city": "dhule",
+    "outstandingFees": "10047",
     "vacant": false
   },
   {
@@ -365,6 +455,8 @@
     "bed": "1",
     "name": "VINIT MOTILAL JAIN",
     "mobile": "1234567939",
+    "city": "dhule",
+    "outstandingFees": "10048",
     "vacant": false
   },
   {
@@ -373,6 +465,8 @@
     "bed": "2",
     "name": "ANKIT BAFNA",
     "mobile": "1234567940",
+    "city": "dhule",
+    "outstandingFees": "10049",
     "vacant": false
   },
   {
@@ -381,6 +475,8 @@
     "bed": "3",
     "name": "SAMYAK KHIVANSARA",
     "mobile": "1234567941",
+    "city": "dhule",
+    "outstandingFees": "10050",
     "vacant": false
   },
   {
@@ -389,6 +485,8 @@
     "bed": "4",
     "name": "PRANAV AJMERA",
     "mobile": "1234567942",
+    "city": "dhule",
+    "outstandingFees": "10051",
     "vacant": false
   },
   {
@@ -397,6 +495,8 @@
     "bed": "5",
     "name": "samyak bhatewara",
     "mobile": "1234567943",
+    "city": "dhule",
+    "outstandingFees": "10052",
     "vacant": false
   },
   {
@@ -405,6 +505,8 @@
     "bed": "6",
     "name": "gaurav gogad",
     "mobile": "1234567944",
+    "city": "dhule",
+    "outstandingFees": "10053",
     "vacant": false
   },
   {
@@ -413,6 +515,8 @@
     "bed": "1",
     "name": "TANISH SANDIP SAKHALA",
     "mobile": "1234567945",
+    "city": "dhule",
+    "outstandingFees": "10054",
     "vacant": false
   },
   {
@@ -421,6 +525,8 @@
     "bed": "2",
     "name": "JINESH JAIN",
     "mobile": "1234567946",
+    "city": "dhule",
+    "outstandingFees": "10055",
     "vacant": false
   },
   {
@@ -429,6 +535,8 @@
     "bed": "3",
     "name": "VANSH JAIN",
     "mobile": "1234567947",
+    "city": "dhule",
+    "outstandingFees": "10056",
     "vacant": false
   },
   {
@@ -437,6 +545,8 @@
     "bed": "1",
     "name": "SAKSHAM LODHA",
     "mobile": "1234567948",
+    "city": "dhule",
+    "outstandingFees": "10057",
     "vacant": false
   },
   {
@@ -445,6 +555,8 @@
     "bed": "2",
     "name": "aayush sharma",
     "mobile": "1234567949",
+    "city": "dhule",
+    "outstandingFees": "10058",
     "vacant": false
   },
   {
@@ -453,6 +565,8 @@
     "bed": "3",
     "name": "akhil thole",
     "mobile": "1234567950",
+    "city": "dhule",
+    "outstandingFees": "10059",
     "vacant": false
   },
   {
@@ -461,6 +575,8 @@
     "bed": "1",
     "name": "BHAVIN KOTHARI",
     "mobile": "1234567951",
+    "city": "dhule",
+    "outstandingFees": "10060",
     "vacant": false
   },
   {
@@ -469,6 +585,8 @@
     "bed": "2",
     "name": "KUSHAL R JAIN",
     "mobile": "1234567952",
+    "city": "dhule",
+    "outstandingFees": "10061",
     "vacant": false
   },
   {
@@ -477,6 +595,8 @@
     "bed": "3",
     "name": "SHREYANSH SURANA",
     "mobile": "1234567953",
+    "city": "dhule",
+    "outstandingFees": "10062",
     "vacant": false
   },
   {
@@ -485,6 +605,8 @@
     "bed": "4",
     "name": "VEERAM JAIN",
     "mobile": "1234567954",
+    "city": "dhule",
+    "outstandingFees": "10063",
     "vacant": false
   },
   {
@@ -493,6 +615,8 @@
     "bed": "5",
     "name": "pratik gadiya",
     "mobile": "1234567955",
+    "city": "dhule",
+    "outstandingFees": "10064",
     "vacant": false
   },
   {
@@ -501,6 +625,8 @@
     "bed": "6",
     "name": "DAKSH JAIN",
     "mobile": "1234567956",
+    "city": "dhule",
+    "outstandingFees": "10065",
     "vacant": false
   },
   {
@@ -509,6 +635,8 @@
     "bed": "1",
     "name": "DHRUV LALWANI",
     "mobile": "1234567958",
+    "city": "dhule",
+    "outstandingFees": "10067",
     "vacant": false
   },
   {
@@ -517,6 +645,8 @@
     "bed": "2",
     "name": "MANAS PAHADE",
     "mobile": "1234567959",
+    "city": "dhule",
+    "outstandingFees": "10068",
     "vacant": false
   },
   {
@@ -525,6 +655,8 @@
     "bed": "3",
     "name": "VINAY CHORDIYA",
     "mobile": "1234567960",
+    "city": "dhule",
+    "outstandingFees": "10069",
     "vacant": false
   },
   {
@@ -533,6 +665,8 @@
     "bed": "4",
     "name": "SHAH CHIRAG",
     "mobile": "1234567961",
+    "city": "dhule",
+    "outstandingFees": "10070",
     "vacant": false
   },
   {
@@ -541,6 +675,8 @@
     "bed": "5",
     "name": "NIPUN MODI",
     "mobile": "1234567962",
+    "city": "dhule",
+    "outstandingFees": "10071",
     "vacant": false
   },
   {
@@ -549,6 +685,8 @@
     "bed": "6",
     "name": "VACATE",
     "mobile": "1234567963",
+    "city": "dhule",
+    "outstandingFees": "10072",
     "vacant": true
   },
   {
@@ -557,6 +695,8 @@
     "bed": "1",
     "name": "SAFAL BORA",
     "mobile": "1234567964",
+    "city": "dhule",
+    "outstandingFees": "10073",
     "vacant": false
   },
   {
@@ -565,6 +705,8 @@
     "bed": "2",
     "name": "VEEDHIT BORA",
     "mobile": "1234567965",
+    "city": "dhule",
+    "outstandingFees": "10074",
     "vacant": false
   },
   {
@@ -573,6 +715,8 @@
     "bed": "3",
     "name": "SAMYAK R. KANKARIYA",
     "mobile": "1234567966",
+    "city": "dhule",
+    "outstandingFees": "10075",
     "vacant": false
   },
   {
@@ -581,6 +725,8 @@
     "bed": "1",
     "name": "VIRYAM OSTWAL",
     "mobile": "1234567967",
+    "city": "dhule",
+    "outstandingFees": "10076",
     "vacant": false
   },
   {
@@ -589,6 +735,8 @@
     "bed": "2",
     "name": "VACATE",
     "mobile": "1234567968",
+    "city": "dhule",
+    "outstandingFees": "10077",
     "vacant": true
   },
   {
@@ -597,6 +745,8 @@
     "bed": "3",
     "name": "dhruv dinesh jain",
     "mobile": "1234567969",
+    "city": "dhule",
+    "outstandingFees": "10078",
     "vacant": false
   },
   {
@@ -605,6 +755,8 @@
     "bed": "4",
     "name": "heramb baberwal",
     "mobile": "1234567970",
+    "city": "dhule",
+    "outstandingFees": "10079",
     "vacant": false
   },
   {
@@ -613,6 +765,8 @@
     "bed": "5",
     "name": "akshat karnawat",
     "mobile": "1234567971",
+    "city": "dhule",
+    "outstandingFees": "10080",
     "vacant": false
   },
   {
@@ -621,6 +775,8 @@
     "bed": "6",
     "name": "VACATE",
     "mobile": "1234567972",
+    "city": "dhule",
+    "outstandingFees": "10081",
     "vacant": true
   },
   {
@@ -629,6 +785,8 @@
     "bed": "1",
     "name": "LODHA MOHIT PRAVIN",
     "mobile": "1234567973",
+    "city": "dhule",
+    "outstandingFees": "10082",
     "vacant": false
   },
   {
@@ -637,6 +795,8 @@
     "bed": "2",
     "name": "VACATE",
     "mobile": "1234567975",
+    "city": "dhule",
+    "outstandingFees": "10084",
     "vacant": true
   },
   {
@@ -645,6 +805,8 @@
     "bed": "3",
     "name": "VACATE",
     "mobile": "1234567977",
+    "city": "dhule",
+    "outstandingFees": "10086",
     "vacant": true
   },
   {
@@ -653,6 +815,8 @@
     "bed": "4",
     "name": "ANSHU KASLIWAL",
     "mobile": "1234567978",
+    "city": "dhule",
+    "outstandingFees": "10087",
     "vacant": false
   },
   {
@@ -661,6 +825,8 @@
     "bed": "5",
     "name": "YASH JAIN",
     "mobile": "1234567979",
+    "city": "dhule",
+    "outstandingFees": "10088",
     "vacant": false
   },
   {
@@ -669,6 +835,8 @@
     "bed": "6",
     "name": "alok bothara",
     "mobile": "1234567980",
+    "city": "dhule",
+    "outstandingFees": "10089",
     "vacant": false
   },
   {
@@ -677,6 +845,8 @@
     "bed": "1",
     "name": "AADI MEHATA",
     "mobile": "1234567981",
+    "city": "dhule",
+    "outstandingFees": "10090",
     "vacant": false
   },
   {
@@ -685,6 +855,8 @@
     "bed": "2",
     "name": "PARTH NARSING",
     "mobile": "1234567982",
+    "city": "dhule",
+    "outstandingFees": "10091",
     "vacant": false
   },
   {
@@ -693,6 +865,8 @@
     "bed": "3",
     "name": "VAIBHAV jitendra jain",
     "mobile": "1234567983",
+    "city": "dhule",
+    "outstandingFees": "10092",
     "vacant": false
   },
   {
@@ -701,6 +875,8 @@
     "bed": "1",
     "name": "TANMAY BADJATE",
     "mobile": "1234567984",
+    "city": "dhule",
+    "outstandingFees": "10093",
     "vacant": false
   },
   {
@@ -709,6 +885,8 @@
     "bed": "2",
     "name": "AAGAM KARNAWAT",
     "mobile": "1234567985",
+    "city": "dhule",
+    "outstandingFees": "10094",
     "vacant": false
   },
   {
@@ -717,6 +895,8 @@
     "bed": "3",
     "name": "ASHISH NITIN JAIN",
     "mobile": "1234567986",
+    "city": "dhule",
+    "outstandingFees": "10095",
     "vacant": false
   },
   {
@@ -725,6 +905,8 @@
     "bed": "4",
     "name": "jain aayush dilip",
     "mobile": "1234567987",
+    "city": "dhule",
+    "outstandingFees": "10096",
     "vacant": false
   },
   {
@@ -733,6 +915,8 @@
     "bed": "5",
     "name": "GAURAV KANKARIYA",
     "mobile": "1234567988",
+    "city": "dhule",
+    "outstandingFees": "10097",
     "vacant": false
   },
   {
@@ -741,6 +925,8 @@
     "bed": "6",
     "name": "DEVASHI",
     "mobile": "1234567989",
+    "city": "dhule",
+    "outstandingFees": "10098",
     "vacant": false
   },
   {
@@ -749,6 +935,8 @@
     "bed": "1",
     "name": "YASH SHEKHAR JAIN",
     "mobile": "1234567990",
+    "city": "dhule",
+    "outstandingFees": "10099",
     "vacant": false
   },
   {
@@ -757,6 +945,8 @@
     "bed": "2",
     "name": "NIKUL JAIN",
     "mobile": "1234567991",
+    "city": "dhule",
+    "outstandingFees": "10100",
     "vacant": false
   },
   {
@@ -765,6 +955,8 @@
     "bed": "3",
     "name": "MANN DUNGARWAL",
     "mobile": "1234567992",
+    "city": "dhule",
+    "outstandingFees": "10101",
     "vacant": false
   },
   {
@@ -773,6 +965,8 @@
     "bed": "4",
     "name": "VACATE",
     "mobile": "1234567993",
+    "city": "dhule",
+    "outstandingFees": "10102",
     "vacant": true
   },
   {
@@ -781,6 +975,8 @@
     "bed": "5",
     "name": "CHIRAG ASHOK JAIN",
     "mobile": "1234567994",
+    "city": "dhule",
+    "outstandingFees": "10103",
     "vacant": false
   },
   {
@@ -789,6 +985,8 @@
     "bed": "6",
     "name": "CHIRAG BAFNA",
     "mobile": "1234567995",
+    "city": "dhule",
+    "outstandingFees": "10104",
     "vacant": false
   },
   {
@@ -797,6 +995,8 @@
     "bed": "1",
     "name": "AADITYA MUGDIYA",
     "mobile": "1234567996",
+    "city": "dhule",
+    "outstandingFees": "10105",
     "vacant": false
   },
   {
@@ -805,6 +1005,8 @@
     "bed": "2",
     "name": "GANESH PARAKH",
     "mobile": "1234567997",
+    "city": "dhule",
+    "outstandingFees": "10106",
     "vacant": false
   },
   {
@@ -813,6 +1015,8 @@
     "bed": "3",
     "name": "UMESH PARAKH",
     "mobile": "1234567998",
+    "city": "dhule",
+    "outstandingFees": "10107",
     "vacant": false
   },
   {
@@ -821,6 +1025,8 @@
     "bed": "4",
     "name": "AMIT  K JAIN",
     "mobile": "1234567999",
+    "city": "dhule",
+    "outstandingFees": "10108",
     "vacant": false
   },
   {
@@ -829,6 +1035,8 @@
     "bed": "5",
     "name": "YASH PARAKH",
     "mobile": "1234568000",
+    "city": "dhule",
+    "outstandingFees": "10109",
     "vacant": false
   },
   {
@@ -837,6 +1045,8 @@
     "bed": "6",
     "name": "nayan kumat",
     "mobile": "1234568001",
+    "city": "dhule",
+    "outstandingFees": "10110",
     "vacant": false
   },
   {
@@ -845,6 +1055,8 @@
     "bed": "1",
     "name": "PRATHAM NAHATA",
     "mobile": "1234568002",
+    "city": "dhule",
+    "outstandingFees": "10111",
     "vacant": false
   },
   {
@@ -853,6 +1065,8 @@
     "bed": "2",
     "name": "YUG LODHA",
     "mobile": "1234568003",
+    "city": "dhule",
+    "outstandingFees": "10112",
     "vacant": false
   },
   {
@@ -861,6 +1075,8 @@
     "bed": "3",
     "name": "CHHORIYA PURVESH P.",
     "mobile": "1234568004",
+    "city": "dhule",
+    "outstandingFees": "10113",
     "vacant": false
   },
   {
@@ -869,6 +1085,8 @@
     "bed": "1",
     "name": "KAYAN SHAH",
     "mobile": "1234568005",
+    "city": "dhule",
+    "outstandingFees": "10114",
     "vacant": false
   },
   {
@@ -877,6 +1095,8 @@
     "bed": "2",
     "name": "NAMIT KATARIYA",
     "mobile": "1234568006",
+    "city": "dhule",
+    "outstandingFees": "10115",
     "vacant": false
   },
   {
@@ -885,6 +1105,8 @@
     "bed": "3",
     "name": "PIYUSH praful jain",
     "mobile": "1234568007",
+    "city": "dhule",
+    "outstandingFees": "10116",
     "vacant": false
   },
   {
@@ -893,6 +1115,8 @@
     "bed": "4",
     "name": "SAMAY CHOPDA",
     "mobile": "1234568008",
+    "city": "dhule",
+    "outstandingFees": "10117",
     "vacant": false
   },
   {
@@ -901,6 +1125,8 @@
     "bed": "5",
     "name": "DAKSH SURANA",
     "mobile": "1234568009",
+    "city": "dhule",
+    "outstandingFees": "10118",
     "vacant": false
   },
   {
@@ -909,6 +1135,8 @@
     "bed": "6",
     "name": "KHIVANSAR MEET M",
     "mobile": "1234568010",
+    "city": "dhule",
+    "outstandingFees": "10119",
     "vacant": false
   },
   {
@@ -917,6 +1145,8 @@
     "bed": "1",
     "name": "MOKSH NAHAR",
     "mobile": "1234568011",
+    "city": "dhule",
+    "outstandingFees": "10120",
     "vacant": false
   },
   {
@@ -925,6 +1155,8 @@
     "bed": "2",
     "name": "HARSH MANDLECHA",
     "mobile": "1234568012",
+    "city": "dhule",
+    "outstandingFees": "10121",
     "vacant": false
   },
   {
@@ -933,6 +1165,8 @@
     "bed": "3",
     "name": "SOHAM JAIN",
     "mobile": "1234568013",
+    "city": "dhule",
+    "outstandingFees": "10122",
     "vacant": false
   },
   {
@@ -941,6 +1175,8 @@
     "bed": "4",
     "name": "NIRBHAY JAIN",
     "mobile": "1234568014",
+    "city": "dhule",
+    "outstandingFees": "10123",
     "vacant": false
   },
   {
@@ -949,6 +1185,8 @@
     "bed": "5",
     "name": "KUNAL BEDMUTHA",
     "mobile": "1234568015",
+    "city": "dhule",
+    "outstandingFees": "10124",
     "vacant": false
   },
   {
@@ -957,6 +1195,8 @@
     "bed": "6",
     "name": "RONAK gadiya",
     "mobile": "1234568016",
+    "city": "dhule",
+    "outstandingFees": "10125",
     "vacant": false
   },
   {
@@ -965,6 +1205,8 @@
     "bed": "1",
     "name": "JAIN JINENDRA D.",
     "mobile": "1234568017",
+    "city": "dhule",
+    "outstandingFees": "10126",
     "vacant": false
   },
   {
@@ -973,6 +1215,8 @@
     "bed": "2",
     "name": "SAYYAM RAKA",
     "mobile": "1234568018",
+    "city": "dhule",
+    "outstandingFees": "10127",
     "vacant": false
   },
   {
@@ -981,6 +1225,8 @@
     "bed": "3",
     "name": "ROHIT LALWANI",
     "mobile": "1234568019",
+    "city": "dhule",
+    "outstandingFees": "10128",
     "vacant": false
   },
   {
@@ -989,6 +1235,8 @@
     "bed": "4",
     "name": "VACATE",
     "mobile": "1234568020",
+    "city": "dhule",
+    "outstandingFees": "10129",
     "vacant": true
   },
   {
@@ -997,6 +1245,8 @@
     "bed": "5",
     "name": "KARTIK PAGARIYA",
     "mobile": "1234568021",
+    "city": "dhule",
+    "outstandingFees": "10130",
     "vacant": false
   },
   {
@@ -1005,6 +1255,8 @@
     "bed": "6",
     "name": "KALASH TATIYA",
     "mobile": "1234568022",
+    "city": "dhule",
+    "outstandingFees": "10131",
     "vacant": false
   },
   {
@@ -1013,6 +1265,8 @@
     "bed": "1",
     "name": "NAMAM PICHA",
     "mobile": "1234568023",
+    "city": "dhule",
+    "outstandingFees": "10132",
     "vacant": false
   },
   {
@@ -1021,6 +1275,8 @@
     "bed": "2",
     "name": "YUG PICHA",
     "mobile": "1234568024",
+    "city": "dhule",
+    "outstandingFees": "10133",
     "vacant": false
   },
   {
@@ -1029,6 +1285,8 @@
     "bed": "3",
     "name": "NAYAN PICHA",
     "mobile": "1234568025",
+    "city": "dhule",
+    "outstandingFees": "10134",
     "vacant": false
   },
   {
@@ -1037,6 +1295,8 @@
     "bed": "4",
     "name": "JAINAM HIRAN",
     "mobile": "1234568026",
+    "city": "dhule",
+    "outstandingFees": "10135",
     "vacant": false
   },
   {
@@ -1045,6 +1305,8 @@
     "bed": "5",
     "name": "sanjam lodha",
     "mobile": "1234568027",
+    "city": "dhule",
+    "outstandingFees": "10136",
     "vacant": false
   },
   {
@@ -1053,6 +1315,8 @@
     "bed": "6",
     "name": "aalekh  hiran",
     "mobile": "1234568028",
+    "city": "dhule",
+    "outstandingFees": "10137",
     "vacant": false
   },
   {
@@ -1061,6 +1325,8 @@
     "bed": "1",
     "name": "darshan dilip jain",
     "mobile": "1234568029",
+    "city": "dhule",
+    "outstandingFees": "10138",
     "vacant": false
   },
   {
@@ -1069,6 +1335,8 @@
     "bed": "2",
     "name": "VIRAG JAIN",
     "mobile": "1234568030",
+    "city": "dhule",
+    "outstandingFees": "10139",
     "vacant": false
   },
   {
@@ -1077,6 +1345,8 @@
     "bed": "3",
     "name": "SAURABH SURANA",
     "mobile": "1234568031",
+    "city": "dhule",
+    "outstandingFees": "10140",
     "vacant": false
   },
   {
@@ -1085,6 +1355,8 @@
     "bed": "4",
     "name": "ISHAL KASLIWAL",
     "mobile": "1234568032",
+    "city": "dhule",
+    "outstandingFees": "10141",
     "vacant": false
   },
   {
@@ -1093,6 +1365,8 @@
     "bed": "5",
     "name": "UTSAV PANDEY",
     "mobile": "1234568033",
+    "city": "dhule",
+    "outstandingFees": "10142",
     "vacant": false
   },
   {
@@ -1101,6 +1375,8 @@
     "bed": "6",
     "name": "DARPAN SHAH",
     "mobile": "1234568034",
+    "city": "dhule",
+    "outstandingFees": "10143",
     "vacant": false
   },
   {
@@ -1109,6 +1385,8 @@
     "bed": "1",
     "name": "CHIRAU BHRAHMECHA",
     "mobile": "1234568035",
+    "city": "dhule",
+    "outstandingFees": "10144",
     "vacant": false
   },
   {
@@ -1117,6 +1395,8 @@
     "bed": "2",
     "name": "VARUN CHORDIYA JAIN",
     "mobile": "1234568036",
+    "city": "dhule",
+    "outstandingFees": "10145",
     "vacant": false
   },
   {
@@ -1125,6 +1405,8 @@
     "bed": "3",
     "name": "CHORDIYA RAJ KISHOR",
     "mobile": "1234568037",
+    "city": "dhule",
+    "outstandingFees": "10146",
     "vacant": false
   },
   {
@@ -1133,6 +1415,8 @@
     "bed": "4",
     "name": "AAYUSH BOTHARA",
     "mobile": "1234568038",
+    "city": "dhule",
+    "outstandingFees": "10147",
     "vacant": false
   },
   {
@@ -1141,6 +1425,8 @@
     "bed": "5",
     "name": "darshan jitendra jain",
     "mobile": "1234568039",
+    "city": "dhule",
+    "outstandingFees": "10148",
     "vacant": false
   },
   {
@@ -1149,6 +1435,8 @@
     "bed": "6",
     "name": "aayush  suresh jain",
     "mobile": "1234568040",
+    "city": "dhule",
+    "outstandingFees": "10149",
     "vacant": false
   },
   {
@@ -1157,6 +1445,8 @@
     "bed": "1",
     "name": "PRATIK SANCHETI",
     "mobile": "1234568041",
+    "city": "dhule",
+    "outstandingFees": "10150",
     "vacant": false
   },
   {
@@ -1165,6 +1455,8 @@
     "bed": "2",
     "name": "ADARSH SANCHETI",
     "mobile": "1234568042",
+    "city": "dhule",
+    "outstandingFees": "10151",
     "vacant": false
   },
   {
@@ -1173,6 +1465,8 @@
     "bed": "3",
     "name": "CHIRAG KHABIYA",
     "mobile": "1234568043",
+    "city": "dhule",
+    "outstandingFees": "10152",
     "vacant": false
   },
   {
@@ -1181,6 +1475,8 @@
     "bed": "4",
     "name": "CHIRAG SAMDADIYA",
     "mobile": "1234568044",
+    "city": "dhule",
+    "outstandingFees": "10153",
     "vacant": false
   },
   {
@@ -1189,6 +1485,8 @@
     "bed": "5",
     "name": "DEVESH JAIN",
     "mobile": "1234568045",
+    "city": "dhule",
+    "outstandingFees": "10154",
     "vacant": false
   },
   {
@@ -1197,6 +1495,8 @@
     "bed": "6",
     "name": "SUJAL SAMADADIYA",
     "mobile": "1234568046",
+    "city": "dhule",
+    "outstandingFees": "10155",
     "vacant": false
   },
   {
@@ -1205,6 +1505,8 @@
     "bed": "1",
     "name": "PRIYESH LOHADE",
     "mobile": "1234568047",
+    "city": "dhule",
+    "outstandingFees": "10156",
     "vacant": false
   },
   {
@@ -1213,6 +1515,8 @@
     "bed": "2",
     "name": "SAMYAK CHORDIYA",
     "mobile": "1234568048",
+    "city": "dhule",
+    "outstandingFees": "10157",
     "vacant": false
   },
   {
@@ -1221,6 +1525,8 @@
     "bed": "3",
     "name": "HARSH BOTHARA",
     "mobile": "1234568049",
+    "city": "dhule",
+    "outstandingFees": "10158",
     "vacant": false
   },
   {
@@ -1229,6 +1535,8 @@
     "bed": "4",
     "name": "TANMAY PAGARIYA",
     "mobile": "1234568050",
+    "city": "dhule",
+    "outstandingFees": "10159",
     "vacant": false
   },
   {
@@ -1237,6 +1545,8 @@
     "bed": "5",
     "name": "sambhav s bafna",
     "mobile": "1234568051",
+    "city": "dhule",
+    "outstandingFees": "10160",
     "vacant": false
   },
   {
@@ -1245,6 +1555,8 @@
     "bed": "6",
     "name": "NAKUL PIPADA",
     "mobile": "1234568052",
+    "city": "dhule",
+    "outstandingFees": "10161",
     "vacant": false
   },
   {
@@ -1253,6 +1565,8 @@
     "bed": "1",
     "name": "HARSHRAJ SINGHAVI",
     "mobile": "1234568053",
+    "city": "dhule",
+    "outstandingFees": "10162",
     "vacant": false
   },
   {
@@ -1261,6 +1575,8 @@
     "bed": "2",
     "name": "SAMYAK J. BAMB",
     "mobile": "1234568054",
+    "city": "dhule",
+    "outstandingFees": "10163",
     "vacant": false
   },
   {
@@ -1269,6 +1585,8 @@
     "bed": "3",
     "name": "ADITYA JAIN",
     "mobile": "1234568055",
+    "city": "dhule",
+    "outstandingFees": "10164",
     "vacant": false
   },
   {
@@ -1277,6 +1595,8 @@
     "bed": "4",
     "name": "SIDDHARTH JAIN",
     "mobile": "1234568056",
+    "city": "dhule",
+    "outstandingFees": "10165",
     "vacant": false
   },
   {
@@ -1285,6 +1605,8 @@
     "bed": "5",
     "name": "parakh sanat",
     "mobile": "1234568057",
+    "city": "dhule",
+    "outstandingFees": "10166",
     "vacant": false
   },
   {
@@ -1293,6 +1615,8 @@
     "bed": "6",
     "name": "BOHARA NAMAN R",
     "mobile": "1234568058",
+    "city": "dhule",
+    "outstandingFees": "10167",
     "vacant": false
   },
   {
@@ -1301,6 +1625,8 @@
     "bed": "1",
     "name": "ARHAM RAKA",
     "mobile": "1234568059",
+    "city": "dhule",
+    "outstandingFees": "10168",
     "vacant": false
   },
   {
@@ -1309,6 +1635,8 @@
     "bed": "2",
     "name": "SAYYAM RAKA",
     "mobile": "1234568060",
+    "city": "dhule",
+    "outstandingFees": "10169",
     "vacant": false
   },
   {
@@ -1317,6 +1645,8 @@
     "bed": "3",
     "name": "RUSHABH CHOPDA",
     "mobile": "1234568061",
+    "city": "dhule",
+    "outstandingFees": "10170",
     "vacant": false
   },
   {
@@ -1325,6 +1655,8 @@
     "bed": "4",
     "name": "HERAMBH KOTHARI",
     "mobile": "1234568062",
+    "city": "dhule",
+    "outstandingFees": "10171",
     "vacant": false
   },
   {
@@ -1333,6 +1665,8 @@
     "bed": "5",
     "name": "kushal chordiya",
     "mobile": "1234568063",
+    "city": "dhule",
+    "outstandingFees": "10172",
     "vacant": false
   },
   {
@@ -1341,6 +1675,8 @@
     "bed": "6",
     "name": "YASH BRAHMECHA",
     "mobile": "1234568064",
+    "city": "dhule",
+    "outstandingFees": "10173",
     "vacant": false
   },
   {
@@ -1349,6 +1685,8 @@
     "bed": "1",
     "name": "YUG CHHAJED",
     "mobile": "1234568065",
+    "city": "dhule",
+    "outstandingFees": "10174",
     "vacant": false
   },
   {
@@ -1357,6 +1695,8 @@
     "bed": "2",
     "name": "LAUKIK",
     "mobile": "1234568066",
+    "city": "dhule",
+    "outstandingFees": "10175",
     "vacant": false
   },
   {
@@ -1365,6 +1705,8 @@
     "bed": "3",
     "name": "GAURAL KALAWADIYA",
     "mobile": "1234568067",
+    "city": "dhule",
+    "outstandingFees": "10176",
     "vacant": false
   },
   {
@@ -1373,6 +1715,8 @@
     "bed": "1",
     "name": "CHANDALIYA CHIRAG",
     "mobile": "1234568068",
+    "city": "dhule",
+    "outstandingFees": "10177",
     "vacant": false
   },
   {
@@ -1381,6 +1725,8 @@
     "bed": "2",
     "name": "VACATE",
     "mobile": "1234568069",
+    "city": "dhule",
+    "outstandingFees": "10178",
     "vacant": true
   },
   {
@@ -1389,6 +1735,8 @@
     "bed": "3",
     "name": "VACATE",
     "mobile": "1234568070",
+    "city": "dhule",
+    "outstandingFees": "10179",
     "vacant": true
   },
   {
@@ -1397,6 +1745,8 @@
     "bed": "4",
     "name": "VIPUL CHANDALAIYA",
     "mobile": "1234568071",
+    "city": "dhule",
+    "outstandingFees": "10180",
     "vacant": false
   },
   {
@@ -1405,6 +1755,8 @@
     "bed": "5",
     "name": "neel brahmecha",
     "mobile": "1234568072",
+    "city": "dhule",
+    "outstandingFees": "10181",
     "vacant": false
   },
   {
@@ -1413,6 +1765,8 @@
     "bed": "6",
     "name": "PRATHAMESH BAFANA",
     "mobile": "1234568073",
+    "city": "dhule",
+    "outstandingFees": "10182",
     "vacant": false
   },
   {
@@ -1421,6 +1775,8 @@
     "bed": "1",
     "name": "SIDDHARTH SETHIYA",
     "mobile": "1234568074",
+    "city": "dhule",
+    "outstandingFees": "10183",
     "vacant": false
   },
   {
@@ -1429,6 +1785,8 @@
     "bed": "2",
     "name": "PRIT JAIN",
     "mobile": "1234568075",
+    "city": "dhule",
+    "outstandingFees": "10184",
     "vacant": false
   },
   {
@@ -1437,6 +1795,8 @@
     "bed": "3",
     "name": "AADITYA SONI",
     "mobile": "1234568076",
+    "city": "dhule",
+    "outstandingFees": "10185",
     "vacant": false
   },
   {
@@ -1445,6 +1805,8 @@
     "bed": "4",
     "name": "VACATE",
     "mobile": "1234568077",
+    "city": "dhule",
+    "outstandingFees": "10186",
     "vacant": true
   },
   {
@@ -1453,6 +1815,8 @@
     "bed": "5",
     "name": "SUJALBADJATE",
     "mobile": "1234568078",
+    "city": "dhule",
+    "outstandingFees": "10187",
     "vacant": false
   },
   {
@@ -1461,6 +1825,8 @@
     "bed": "6",
     "name": "AAYUSH JAIN kasliwal",
     "mobile": "1234568079",
+    "city": "dhule",
+    "outstandingFees": "10188",
     "vacant": false
   },
   {
@@ -1469,6 +1835,8 @@
     "bed": "1",
     "name": "AMAN AGRAWAL",
     "mobile": "1234568080",
+    "city": "dhule",
+    "outstandingFees": "10189",
     "vacant": false
   },
   {
@@ -1477,6 +1845,8 @@
     "bed": "2",
     "name": "MALAY SHAH",
     "mobile": "1234568081",
+    "city": "dhule",
+    "outstandingFees": "10190",
     "vacant": false
   },
   {
@@ -1485,6 +1855,8 @@
     "bed": "3",
     "name": "KANKARIYA YASH R",
     "mobile": "1234568082",
+    "city": "dhule",
+    "outstandingFees": "10191",
     "vacant": false
   },
   {
@@ -1493,6 +1865,8 @@
     "bed": "4",
     "name": "PUSHKAR CHORDIYA",
     "mobile": "1234568083",
+    "city": "dhule",
+    "outstandingFees": "10192",
     "vacant": false
   },
   {
@@ -1501,6 +1875,8 @@
     "bed": "5",
     "name": "UDIT JAIN",
     "mobile": "1234568084",
+    "city": "dhule",
+    "outstandingFees": "10193",
     "vacant": false
   },
   {
@@ -1509,6 +1885,8 @@
     "bed": "6",
     "name": "JINESH GADIYA",
     "mobile": "1234568085",
+    "city": "dhule",
+    "outstandingFees": "10194",
     "vacant": false
   },
   {
@@ -1517,6 +1895,8 @@
     "bed": "1",
     "name": "DHIRAJ AGRAWAL",
     "mobile": "1234568086",
+    "city": "dhule",
+    "outstandingFees": "10195",
     "vacant": false
   },
   {
@@ -1525,6 +1905,8 @@
     "bed": "2",
     "name": "JINESH R JAIN",
     "mobile": "1234568087",
+    "city": "dhule",
+    "outstandingFees": "10196",
     "vacant": false
   },
   {
@@ -1533,6 +1915,8 @@
     "bed": "3",
     "name": "PURAB KOTHARI",
     "mobile": "1234568088",
+    "city": "dhule",
+    "outstandingFees": "10197",
     "vacant": false
   },
   {
@@ -1541,6 +1925,8 @@
     "bed": "4",
     "name": "KALASH CHHAJED",
     "mobile": "1234568089",
+    "city": "dhule",
+    "outstandingFees": "10198",
     "vacant": false
   },
   {
@@ -1549,6 +1935,8 @@
     "bed": "5",
     "name": "DIRGH BHRAHMECHA",
     "mobile": "1234568090",
+    "city": "dhule",
+    "outstandingFees": "10199",
     "vacant": false
   },
   {
@@ -1557,6 +1945,8 @@
     "bed": "6",
     "name": "OSTWAL SIDDHARTH",
     "mobile": "1234568091",
+    "city": "dhule",
+    "outstandingFees": "10200",
     "vacant": false
   }
 ]
