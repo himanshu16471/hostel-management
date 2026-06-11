@@ -1,4 +1,3 @@
-console.log("THIS SERVER FILE IS RUNNING");
 const express = require("express");
 const XLSX = require("xlsx");
 const fs = require("fs");
@@ -21,29 +20,32 @@ function loadStudentsFromExcel() {
   let currentRoom = null;
   let id = 1;
 
-  rows.forEach(row => {;
+  rows.forEach(row => {
     if (row[3]) {
       const roomNo = parseInt(row[3]);
       if (!isNaN(roomNo)) currentRoom = roomNo;
     }
-const bed = row[4];
-const name = row[5];
-const mobile = row[6];
-const city = row[7];
-const outstandingFees = row[8];
 
-if (currentRoom && bed && name) {
-  students.push({
-    id: id++,
-    room: Number(currentRoom),
-    bed: String(bed),
-    name: String(name).trim(),
-    mobile: String(mobile || ""),
-    city: String(city || ""),
-  outstandingFees: String(outstandingFees || ""),
-    vacant: String(name).toUpperCase().includes("VACATE")
-  });
-}
+    const bed = row[4];
+    const name = row[5];
+    const mobile = row[6];
+    const city = row[7];
+    const outstandingFees = row[8];
+    const paymentReceived = row[9];
+
+    if (currentRoom && bed && name) {
+      students.push({
+        id: id++,
+        room: Number(currentRoom),
+        bed: String(bed),
+        name: String(name).trim(),
+        mobile: String(mobile || ""),
+        city: String(city || ""),
+        outstandingFees: String(outstandingFees || "0"),
+        paymentReceived: String(paymentReceived || "0"),
+        vacant: String(name).toUpperCase().includes("VACATE")
+      });
+    }
   });
 
   return students;
@@ -62,16 +64,26 @@ function readStudents() {
 function saveStudents(data) {
   fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
 }
-console.log("DATA FILE =", DATA_FILE);
 
 let students = readStudents();
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
 
 app.get("/students", (req, res) => {
   res.json(students);
 });
 
 app.post("/add", (req, res) => {
-  const { name, room, bed } = req.body;
+  const { name, room, bed, mobile, city, outstandingFees, paymentReceived } = req.body;
+
+  if (!name || !room || !bed) {
+    return res.json({
+      success: false,
+      message: "Name, room and bed are required"
+    });
+  }
 
   const existingBed = students.find(
     s => Number(s.room) === Number(room) && String(s.bed) === String(bed)
@@ -79,19 +91,51 @@ app.post("/add", (req, res) => {
 
   if (existingBed) {
     existingBed.name = String(name).trim();
+    existingBed.mobile = String(mobile || existingBed.mobile || "");
+    existingBed.city = String(city || existingBed.city || "");
+    existingBed.outstandingFees = String(outstandingFees || existingBed.outstandingFees || "0");
+    existingBed.paymentReceived = String(paymentReceived || existingBed.paymentReceived || "0");
     existingBed.vacant = false;
-  } else {
-    students.push({
-      id: Date.now(),
-      name: String(name).trim(),
-      room: Number(room),
-      bed: String(bed),
-      vacant: false
-    });
+
+    saveStudents(students);
+    return res.json({ success: true, student: existingBed });
   }
 
+  const newStudent = {
+    id: Date.now(),
+    room: Number(room),
+    bed: String(bed),
+    name: String(name).trim(),
+    mobile: String(mobile || ""),
+    city: String(city || ""),
+    outstandingFees: String(outstandingFees || "0"),
+    paymentReceived: String(paymentReceived || "0"),
+    vacant: false
+  };
+
+  students.push(newStudent);
   saveStudents(students);
-  res.json({ success: true });
+
+  res.json({ success: true, student: newStudent });
+});
+
+app.put("/update/:id", (req, res) => {
+  const student = students.find(s => String(s.id) === String(req.params.id));
+
+  if (!student) {
+    return res.json({ success: false, message: "Student not found" });
+  }
+
+  student.name = req.body.name || student.name;
+  student.mobile = req.body.mobile || student.mobile;
+  student.city = req.body.city || student.city;
+  student.outstandingFees = req.body.outstandingFees || student.outstandingFees;
+  student.paymentReceived = req.body.paymentReceived || student.paymentReceived;
+  student.vacant = false;
+
+  saveStudents(students);
+
+  res.json({ success: true, updatedStudent: student });
 });
 
 app.delete("/delete/:id", (req, res) => {
@@ -108,13 +152,9 @@ app.delete("/delete/:id", (req, res) => {
 
   res.json({ success: true, updatedStudent: student });
 });
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
-});
+
 const PORT = process.env.PORT || 3000;
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
-});
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

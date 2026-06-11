@@ -35,7 +35,15 @@ if (localStorage.getItem("loggedIn") !== "true") {
         <h3>Occupied Beds</h3>
         <p id="occupied">0</p>
       </div>
+<div class="card">
+  <h3>Total Outstanding Fees</h3>
+  <p>₹<span id="totalFees">0</span></p>
+</div>
 
+<div class="card">
+  <h3>Total Payment Received</h3>
+  <p>₹<span id="totalReceived">0</span></p>
+</div>
      
 <div class="card">
   <h3>Available Beds</h3>
@@ -82,6 +90,32 @@ function logout() {
     <p><b>Mobile:</b> <span id="modalMobile"></span></p>
 <p><b>City:</b> <span id="modalCity"></span></p>
 <p><b>Outstanding Fees:</b> ₹<span id="modalFees"></span></p>
+<p><b>Payment Received:</b> ₹<span id="modalReceived"></span></p>
+    <button onclick="editStudent()">✏️ Edit Student</button>
+    <a id="whatsappBtn" target="_blank">
+      <button type="button">💬 WhatsApp</button>
+    </a>
+  </div>
+<div id="studentModal" class="modal">
+  <div class="modalBox">
+    <span class="closeBtn" onclick="closeStudentModal()">×</span>
+
+    <h2 id="modalName"></h2>
+
+    <p><b>Room:</b> <span id="modalRoom"></span></p>
+    <p><b>Bed:</b> <span id="modalBed"></span></p>
+    <p><b>Mobile:</b> <span id="modalMobile"></span></p>
+    <p><b>City:</b> <span id="modalCity"></span></p>
+    <p><b>Outstanding Fees:</b> ₹<span id="modalFees"></span></p>
+
+    <button onclick="editStudent()">✏️ Edit Student</button>
+
+    <a id="whatsappBtn" target="_blank">
+      <button type="button">💬 WhatsApp</button>
+    </a>
+
+  </div>
+</div>
 
   </div>
 </div>

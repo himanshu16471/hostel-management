@@ -1,13 +1,8 @@
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: url("./hostel.jpg") no-repeat center center fixed;
-  background-size: cover;
-  background-image: url("/hostel.jpg");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-attachment: fixed;
+  background: linear-gradient(135deg, #095283, #2b5791);
 }
 
 .container {
@@ -17,7 +12,7 @@ background-attachment: fixed;
 .sidebar {
   width: 220px;
   height: 100vh;
-  background: linear-gradient(180deg, #0f172a, #111827);
+  background: linear-gradient(180deg, #485e92, #111827);
   color: white;
   position: fixed;
   padding: 24px 18px;
@@ -43,8 +38,6 @@ background-attachment: fixed;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
 }
 
 .sidebar a:hover {
@@ -73,6 +66,11 @@ background-attachment: fixed;
   width: calc(100% - 280px);
 }
 
+.main h1 {
+  color: white;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
 .cards {
   display: flex;
   gap: 16px;
@@ -80,11 +78,18 @@ background-attachment: fixed;
 }
 
 .card,
-.emptyBedsPanel {
-  background: white;
-  padding: 22px;
+.emptyBedsPanel,
+.roomCard,
+.modalBox {
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(8px);
   border-radius: 16px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.card,
+.emptyBedsPanel {
+  padding: 22px;
   flex: 1;
   min-width: 220px;
 }
@@ -122,7 +127,7 @@ background-attachment: fixed;
   border: 1px solid #d1d5db;
   border-radius: 12px;
   font-size: 15px;
-  background: white;
+  background: rgba(255,255,255,0.95);
   min-width: 180px;
 }
 
@@ -133,7 +138,8 @@ background-attachment: fixed;
 }
 
 .inputBox button,
-.btn {
+.btn,
+.modalBox button {
   padding: 12px 18px;
   border: none;
   border-radius: 12px;
@@ -142,10 +148,12 @@ background-attachment: fixed;
   font-weight: 600;
   cursor: pointer;
   transition: 0.2s;
+  margin: 4px;
 }
 
 .inputBox button:hover,
-.btn:hover {
+.btn:hover,
+.modalBox button:hover {
   background: #1d4ed8;
   transform: translateY(-2px);
 }
@@ -161,17 +169,14 @@ background-attachment: fixed;
 .roomCard {
   width: 300px;
   min-width: 300px;
-  background: white;
-  border-radius: 16px;
   padding: 18px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
 .roomCard h2 {
   margin-top: 0;
   font-size: 24px;
   color: #111827;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ddd;
   padding-bottom: 12px;
 }
 
@@ -183,6 +188,7 @@ background-attachment: fixed;
   padding: 14px;
   margin: 12px 0;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .bed strong {
@@ -266,22 +272,6 @@ background-attachment: fixed;
   color: red;
 }
 
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes pulseLogo {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.03); }
-  100% { transform: scale(1); }
-}
 .modal {
   display: none;
   position: fixed;
@@ -293,11 +283,8 @@ background-attachment: fixed;
 }
 
 .modalBox {
-  background: white;
-  width: 360px;
+  width: 380px;
   padding: 25px;
-  border-radius: 18px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 
 .closeBtn {
@@ -306,6 +293,20 @@ background-attachment: fixed;
   cursor: pointer;
 }
 
-.bed {
-  cursor: pointer;
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulseLogo {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
 }

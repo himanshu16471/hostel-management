@@ -1,5 +1,6 @@
 const API = "";
 let allStudents = [];
+let selectedStudentId = null;
 
 function isVacant(s) {
   const name = String(s.name || "").toUpperCase().trim();
@@ -11,14 +12,15 @@ function isVacant(s) {
   );
 }
 
+function getNumber(value) {
+  return Number(String(value || "0").replace(/[^0-9]/g, "")) || 0;
+}
+
 async function loadData() {
   const response = await fetch(`/students?time=${Date.now()}`);
   allStudents = await response.json();
-  console.log("fresh data", allStudents[0]);
   showStudents(allStudents);
 }
-
- 
 
 function showStudents(students) {
   const occupiedBeds = allStudents.filter(s => !isVacant(s)).length;
@@ -27,6 +29,22 @@ function showStudents(students) {
   document.getElementById("total").innerText = allStudents.length;
   document.getElementById("occupied").innerText = occupiedBeds;
   document.getElementById("available").innerText = vacantList.length;
+
+  const totalFees = allStudents.reduce(
+    (sum, student) => sum + getNumber(student.outstandingFees),
+    0
+  );
+
+  const totalReceived = allStudents.reduce(
+    (sum, student) => sum + getNumber(student.paymentReceived),
+    0
+  );
+
+  const totalFeesEl = document.getElementById("totalFees");
+  if (totalFeesEl) totalFeesEl.innerText = totalFees;
+
+  const totalReceivedEl = document.getElementById("totalReceived");
+  if (totalReceivedEl) totalReceivedEl.innerText = totalReceived;
 
   const emptyBedsDiv = document.getElementById("emptyBedsList");
 
@@ -49,10 +67,7 @@ function showStudents(students) {
   const rooms = {};
 
   students.forEach(student => {
-    if (!rooms[student.room]) {
-      rooms[student.room] = [];
-    }
-
+    if (!rooms[student.room]) rooms[student.room] = [];
     rooms[student.room].push(student);
   });
 
@@ -67,10 +82,10 @@ function showStudents(students) {
 
         const buttonHTML = isVacant(student)
           ? `<button disabled class="vacantBtn">Vacant</button>`
-          : `<button onclick="deleteStudent(${student.id})" class="occupiedBtn">Make Vacant</button>`;
+          : `<button onclick="event.stopPropagation(); deleteStudent(${student.id})" class="occupiedBtn">Make Vacant</button>`;
 
         bedsHTML += `
-      <div class="bed ${bedClass}" onclick="showStudentInfo(${student.id})">
+          <div class="bed ${bedClass}" onclick="showStudentInfo(${student.id})">
             <strong>Bed ${student.bed}</strong>
             <span>${studentName}</span>
             <small>Room ${student.room}</small>
@@ -88,18 +103,6 @@ function showStudents(students) {
     });
 }
 
-function searchStudent() {
-  const keyword = document.getElementById("search").value.toLowerCase();
-
-  const filtered = allStudents.filter(student =>
-    String(student.name).toLowerCase().includes(keyword) ||
-    String(student.room).includes(keyword) ||
-    String(student.bed).toLowerCase().includes(keyword)
-  );
-
-  showStudents(filtered);
-}
-
 function goToRoom() {
   const roomNo = document.getElementById("roomSearch").value.trim();
   const roomCard = document.getElementById(`room-${roomNo}`);
@@ -112,9 +115,7 @@ function goToRoom() {
 }
 
 function findStudent() {
-  const name = document.getElementById("studentSearch").value
-    .toLowerCase()
-    .trim();
+  const name = document.getElementById("studentSearch").value.toLowerCase().trim();
 
   const student = allStudents.find(s =>
     String(s.name).toLowerCase().includes(name)
@@ -136,7 +137,9 @@ function findStudent() {
     }, 3000);
   }
 
-  alert(`Student: ${student.name}\nRoom: ${student.room}\nBed: ${student.bed}`);
+  alert(
+    `Student: ${student.name}\nRoom: ${student.room}\nBed: ${student.bed}\nMobile: ${student.mobile || "Not added"}`
+  );
 }
 
 async function addStudent() {
@@ -169,10 +172,7 @@ async function deleteStudent(id) {
     method: "DELETE"
   });
 
-  const response = await fetch(`${API}/students`);
-  allStudents = await response.json();
-
-  showStudents(allStudents);
+  await loadData();
 }
 
 function showStudentInfo(id) {
@@ -180,23 +180,59 @@ function showStudentInfo(id) {
 
   if (!student) return;
 
+  selectedStudentId = student.id;
+
   document.getElementById("modalName").innerText = student.name || "VACANT";
   document.getElementById("modalRoom").innerText = student.room || "-";
   document.getElementById("modalBed").innerText = student.bed || "-";
+  document.getElementById("modalMobile").innerText = student.mobile || "Not added";
+  document.getElementById("modalCity").innerText = student.city || "Not added";
+  document.getElementById("modalFees").innerText = student.outstandingFees || "0";
+  document.getElementById("modalReceived").innerText = student.paymentReceived || "0";
 
-  document.getElementById("modalMobile").innerText =
-    student.mobile || "Not added";
+  const cleanMobile = String(student.mobile || "").replace(/\D/g, "");
+  const whatsappBtn = document.getElementById("whatsappBtn");
 
-  document.getElementById("modalCity").innerText =
-    student.city || "Not added";
-
-  document.getElementById("modalFees").innerText =
-    student.outstandingFees || "0";
+  if (whatsappBtn) {
+    whatsappBtn.href = cleanMobile ? `https://wa.me/91${cleanMobile}` : "#";
+  }
 
   document.getElementById("studentModal").style.display = "flex";
+}
+
+async function editStudent() {
+  const student = allStudents.find(
+    s => String(s.id) === String(selectedStudentId)
+  );
+
+  if (!student) return;
+
+  const name = prompt("Enter student name:", student.name || "");
+  const mobile = prompt("Enter mobile number:", student.mobile || "");
+  const city = prompt("Enter city:", student.city || "");
+  const outstandingFees = prompt("Enter outstanding fees:", student.outstandingFees || "0");
+  const paymentReceived = prompt("Enter payment received:", student.paymentReceived || "0");
+
+  await fetch(`/update/${student.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      name,
+      mobile,
+      city,
+      outstandingFees,
+      paymentReceived
+    })
+  });
+
+  closeStudentModal();
+  await loadData();
 }
 
 function closeStudentModal() {
   document.getElementById("studentModal").style.display = "none";
 }
+
 loadData();
