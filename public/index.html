@@ -73,5 +73,14 @@ function logout() {
   window.location.href = "login.html";
 }
 </script>
+<div id="studentModal" class="modal">
+  <div class="modalBox">
+    <span class="closeBtn" onclick="closeStudentModal()">×</span>
+    <h2 id="modalName"></h2>
+    <p><b>Room:</b> <span id="modalRoom"></span></p>
+    <p><b>Bed:</b> <span id="modalBed"></span></p>
+    <p><b>Mobile:</b> <span id="modalMobile"></span></p>
+  </div>
+</div>
 </body>
 </html>

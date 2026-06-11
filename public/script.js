@@ -12,19 +12,13 @@ function isVacant(s) {
 }
 
 async function loadData() {
-  const response = await fetch(`${API}/students`);
-  const data = await response.json();
-
-  console.log(data);
-
-  if (Array.isArray(data)) {
-    allStudents = data;
-  } else {
-    allStudents = data.students || [];
-  }
-
+  const response = await fetch(`/students?time=${Date.now()}`);
+  allStudents = await response.json();
+  console.log("fresh data", allStudents[0]);
   showStudents(allStudents);
 }
+
+ 
 
 function showStudents(students) {
   const occupiedBeds = allStudents.filter(s => !isVacant(s)).length;
@@ -76,7 +70,7 @@ function showStudents(students) {
           : `<button onclick="deleteStudent(${student.id})" class="occupiedBtn">Make Vacant</button>`;
 
         bedsHTML += `
-          <div class="bed ${bedClass}">
+      <div class="bed ${bedClass}" onclick="showStudentInfo(${student.id})">
             <strong>Bed ${student.bed}</strong>
             <span>${studentName}</span>
             <small>Room ${student.room}</small>
@@ -181,4 +175,21 @@ async function deleteStudent(id) {
   showStudents(allStudents);
 }
 
+function showStudentInfo(id) {
+  const student = allStudents.find(s => String(s.id) === String(id));
+
+  if (!student) return;
+
+  document.getElementById("modalName").innerText = student.name || "VACANT";
+  document.getElementById("modalRoom").innerText = student.room || "-";
+  document.getElementById("modalBed").innerText = student.bed || "-";
+  document.getElementById("modalMobile").innerText =
+    student.mobile || "Not added";
+
+  document.getElementById("studentModal").style.display = "flex";
+}
+
+function closeStudentModal() {
+  document.getElementById("studentModal").style.display = "none";
+}
 loadData();

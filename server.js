@@ -21,24 +21,25 @@ function loadStudentsFromExcel() {
   let currentRoom = null;
   let id = 1;
 
-  rows.forEach(row => {
+  rows.forEach(row => {;
     if (row[3]) {
       const roomNo = parseInt(row[3]);
       if (!isNaN(roomNo)) currentRoom = roomNo;
     }
+const bed = row[4];
+const name = row[5];
+const mobile = row[6];
 
-    const bed = row[4];
-    const name = row[5];
-
-    if (currentRoom && bed && name) {
-      students.push({
-        id: id++,
-        room: Number(currentRoom),
-        bed: String(bed),
-        name: String(name).trim(),
-        vacant: String(name).toUpperCase().includes("VACATE")
-      });
-    }
+if (currentRoom && bed && name) {
+  students.push({
+    id: id++,
+    room: Number(currentRoom),
+    bed: String(bed),
+    name: String(name).trim(),
+    mobile: String(mobile || ""),
+    vacant: String(name).toUpperCase().includes("VACATE")
+  });
+}
   });
 
   return students;
