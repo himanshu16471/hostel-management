@@ -13,7 +13,8 @@ app.use(express.static(path.join(__dirname, "public")));
 
 function loadStudentsFromExcel() {
   const workbook = XLSX.readFile(EXCEL_FILE);
-  const sheet = workbook.Sheets[workbook.SheetNames[0]];
+  console.log("Sheets:", workbook.SheetNames);
+ const sheet = workbook.Sheets["Sheet2"];
   const rows = XLSX.utils.sheet_to_json(sheet, { header: 1 });
 
   const students = [];
@@ -21,22 +22,23 @@ function loadStudentsFromExcel() {
   let id = 1;
 
   rows.forEach(row => {
-    if (row[3]) {
-      const roomNo = parseInt(row[3]);
-      if (!isNaN(roomNo)) currentRoom = roomNo;
-    }
-
-    const bed = row[4];
-    const name = row[5];
-    const mobile = row[6];
-    const city = row[7];
-    const outstandingFees = row[8];
-    const paymentReceived = row[9];
-
-    if (currentRoom && bed && name) {
+    console.log(row);
+    const roomNo = row[0];
+const bed = row[1];
+const name = row[2];
+const mobile = row[3];
+const city = row[4];
+const outstandingFees = row[5];
+const paymentReceived = row[6];
+   if (
+  roomNo &&
+  bed &&
+  name &&
+  String(name).trim() !== "NAME OF THE STUDENTS"
+) {
       students.push({
         id: id++,
-        room: Number(currentRoom),
+        room: Number(roomNo),
         bed: String(bed),
         name: String(name).trim(),
         mobile: String(mobile || ""),
