@@ -69,6 +69,8 @@ function showStudents(students) {
   students.forEach(student => {
     if (!rooms[student.room]) rooms[student.room] = [];
     rooms[student.room].push(student);
+    Object.keys(rooms).forEach(room => {
+  // create room card
   });
 
   Object.keys(rooms)
