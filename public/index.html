@@ -5,22 +5,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script>
-if (localStorage.getItem("loggedIn") !== "true") {
-  window.location.href = "login.html";
-}
+<script>
+  if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+  }
 </script>
+
 <div class="container">
   <div class="sidebar">
+    <h2>🏨 SJOB<br>Database</h2>
+
+    <a class="active" href="#">📊 Dashboard</a>
+    <a href="#roomsSection">🏠 Rooms</a>
+    <a href="#dormSection">🛏 Dorm</a>
+    <a href="/download-fees-report">📄 PDF Report</a>
     <a href="#" onclick="logout()">🚪 Logout</a>
-  <h2>🏨 SJOB<br>Database</h2>
 
-  <a class="active" href="#">📊 Dashboard</a>
-  <a href="#">👨‍🎓 Students</a>
-  <a href="#">🏠 Rooms</a>
-
-  <p class="sidebar-footer">SJOB Hostel ERP</p>
-</div>
+    <p class="sidebar-footer">SJOB Hostel ERP</p>
+  </div>
 
   <div class="main">
     <h1>Shree Jain Oswal Boarding Management</h1>
@@ -35,67 +37,55 @@ if (localStorage.getItem("loggedIn") !== "true") {
         <h3>Occupied Beds</h3>
         <p id="occupied">0</p>
       </div>
-<div class="card">
-  <h3>Total Outstanding Fees</h3>
-  <p>₹<span id="totalFees">0</span></p>
-</div>
 
-<div class="card">
-  <h3>Total Payment Received</h3>
-  <p>₹<span id="totalReceived">0</span></p>
-</div>
-     
-<div class="card">
-  <h3>Available Beds</h3>
-  <p id="available">0</p>
-</div>
-<div class="emptyBedsPanel">
-  <h2>🟢 Empty Beds</h2>
-  <div id="emptyBedsList"></div>
-</div>
+      <div class="card">
+        <h3>Available Beds</h3>
+        <p id="available">0</p>
+      </div>
 
-    </div>  
-<div class="inputBox">
-<input id="name" placeholder="👨‍🎓 Student Name">
-<input id="room" placeholder="🏠 Room Number">
-<input id="bed" placeholder="🛏 Bed Number">
-<input id="roomSearch" placeholder="🔍 Find Room">
-<button class="btn go" onclick="goToRoom()">Go</button>
-<input id="studentSearch" placeholder="👨‍🎓 Enter Student Name">
-<button onclick="findStudent()">🔍 Find Student</button>
+      <div class="card">
+        <h3>Total Outstanding Fees</h3>
+        <p>₹<span id="totalFees">0</span></p>
+      </div>
 
-<button class="btn primary" onclick="addStudent()">+ Allocate Bed</button>
-</div>
+      <div class="card">
+        <h3>Total Payment Received</h3>
+        <p>₹<span id="totalReceived">0</span></p>
+      </div>
 
-<div class="inputBox">
-  
-  <div id="table"></div>
-</div>
+      <div class="emptyBedsPanel">
+        <h2>🟢 Empty Beds</h2>
+        <div id="emptyBedsList"></div>
+      </div>
+    </div>
+
+    <div class="inputBox">
+      <input id="name" placeholder="👨‍🎓 Student Name">
+      <input id="room" placeholder="🏠 Room Number / DORM">
+      <input id="bed" placeholder="🛏 Bed Number">
+      <button class="btn primary" onclick="addStudent()">+ Allocate Bed</button>
+    </div>
+
+    <div class="inputBox">
+      <input id="roomSearch" placeholder="🔍 Find Room">
+      <button class="btn go" onclick="goToRoom()">Go</button>
+
+      <input id="studentSearch" placeholder="👨‍🎓 Enter Student Name">
+      <button onclick="findStudent()">🔍 Find Student</button>
+
+      <button onclick="window.open('/download-fees-report')">
+        📄 Download Fees PDF
+      </button>
+    </div>
+
+    <h2 id="roomsSection" class="sectionTitle">🏠 Hostel Rooms</h2>
+    <div id="table"></div>
+
+    <h2 id="dormSection" class="sectionTitle">🛏 Dorm Section</h2>
+    <div id="dormTable"></div>
   </div>
 </div>
 
-<script src="script.js"></script>
-<script>
-function logout() {
-  localStorage.removeItem("loggedIn");
-  window.location.href = "login.html";
-}
-</script>
-<div id="studentModal" class="modal">
-  <div class="modalBox">
-    <span class="closeBtn" onclick="closeStudentModal()">×</span>
-    <h2 id="modalName"></h2>
-    <p><b>Room:</b> <span id="modalRoom"></span></p>
-    <p><b>Bed:</b> <span id="modalBed"></span></p>
-    <p><b>Mobile:</b> <span id="modalMobile"></span></p>
-<p><b>City:</b> <span id="modalCity"></span></p>
-<p><b>Outstanding Fees:</b> ₹<span id="modalFees"></span></p>
-<p><b>Payment Received:</b> ₹<span id="modalReceived"></span></p>
-    <button onclick="editStudent()">✏️ Edit Student</button>
-    <a id="whatsappBtn" target="_blank">
-      <button type="button">💬 WhatsApp</button>
-    </a>
-  </div>
 <div id="studentModal" class="modal">
   <div class="modalBox">
     <span class="closeBtn" onclick="closeStudentModal()">×</span>
@@ -107,17 +97,23 @@ function logout() {
     <p><b>Mobile:</b> <span id="modalMobile"></span></p>
     <p><b>City:</b> <span id="modalCity"></span></p>
     <p><b>Outstanding Fees:</b> ₹<span id="modalFees"></span></p>
+    <p><b>Payment Received:</b> ₹<span id="modalReceived"></span></p>
 
     <button onclick="editStudent()">✏️ Edit Student</button>
 
     <a id="whatsappBtn" target="_blank">
       <button type="button">💬 WhatsApp</button>
     </a>
-
   </div>
 </div>
 
-  </div>
-</div>
+<script src="script.js"></script>
+
+<script>
+function logout() {
+  localStorage.removeItem("loggedIn");
+  window.location.href = "login.html";
+}
+</script>
 </body>
 </html>

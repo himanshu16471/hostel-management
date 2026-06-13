@@ -30,7 +30,7 @@ function showStudents(students) {
   document.getElementById("occupied").innerText = occupiedBeds;
   document.getElementById("available").innerText = vacantList.length;
 
-  const totalFees = allStudents.reduce(
+  const totalOutstanding = allStudents.reduce(
     (sum, student) => sum + getNumber(student.outstandingFees),
     0
   );
@@ -40,45 +40,59 @@ function showStudents(students) {
     0
   );
 
-  const totalFeesEl = document.getElementById("totalFees");
-  if (totalFeesEl) totalFeesEl.innerText = totalFees;
+  document.getElementById("totalFees").innerText = totalOutstanding.toLocaleString();
+  document.getElementById("totalReceived").innerText = totalReceived.toLocaleString();
 
-  const totalReceivedEl = document.getElementById("totalReceived");
-  if (totalReceivedEl) totalReceivedEl.innerText = totalReceived;
+  showEmptyBeds(vacantList);
+  showRoomCards(students);
+}
 
+function showEmptyBeds(vacantList) {
   const emptyBedsDiv = document.getElementById("emptyBedsList");
 
-  if (emptyBedsDiv) {
-    emptyBedsDiv.innerHTML = vacantList.length
-      ? vacantList
-          .sort((a, b) => Number(a.room) - Number(b.room))
-          .map(bed => `
-            <div class="emptyBedItem">
-              Room ${bed.room} - Bed ${bed.bed}
-            </div>
-          `)
-          .join("")
-      : "<p>No empty beds available</p>";
-  }
+  emptyBedsDiv.innerHTML = vacantList.length
+    ? vacantList
+        .sort((a, b) => String(a.room).localeCompare(String(b.room), undefined, { numeric: true }))
+        .map(bed => `
+          <div class="emptyBedItem">
+            Room ${bed.room} - Bed ${bed.bed}
+          </div>
+        `)
+        .join("")
+    : "<p>No empty beds available</p>";
+}
 
+function showRoomCards(students) {
   const table = document.getElementById("table");
-  table.innerHTML = "";
+  const dormTable = document.getElementById("dormTable");
 
-  const rooms = {};
+  table.innerHTML = "";
+  dormTable.innerHTML = "";
+
+  const normalRooms = {};
+  const dormRooms = {};
 
   students.forEach(student => {
-    if (!rooms[student.room]) rooms[student.room] = [];
-    rooms[student.room].push(student);
-   
+    const room = String(student.room || "").trim();
+    if (!room) return;
+
+    if (room.toUpperCase().includes("DORM")) {
+      if (!dormRooms[room]) dormRooms[room] = [];
+      dormRooms[room].push(student);
+    } else {
+      if (!normalRooms[room]) normalRooms[room] = [];
+      normalRooms[room].push(student);
+    }
   });
 
+  renderRoomGroup(normalRooms, table);
+  renderRoomGroup(dormRooms, dormTable);
+}
+
+function renderRoomGroup(rooms, container) {
   Object.keys(rooms)
-  .sort((a, b) => {
-    if (a === "DORM") return 1;
-    if (b === "DORM") return -1;
-    return Number(a) - Number(b);
-  })
-  .forEach(room => {
+    .sort((a, b) => String(a).localeCompare(String(b), undefined, { numeric: true }))
+    .forEach(room => {
       let bedsHTML = "";
 
       rooms[room].forEach(student => {
@@ -99,7 +113,7 @@ function showStudents(students) {
         `;
       });
 
-      table.innerHTML += `
+      container.innerHTML += `
         <div class="roomCard" id="room-${room}">
           <h2>Room ${room}</h2>
           ${bedsHTML}
@@ -142,9 +156,7 @@ function findStudent() {
     }, 3000);
   }
 
-  alert(
-    `Student: ${student.name}\nRoom: ${student.room}\nBed: ${student.bed}\nMobile: ${student.mobile || "Not added"}`
-  );
+  showStudentInfo(student.id);
 }
 
 async function addStudent() {
@@ -159,14 +171,8 @@ async function addStudent() {
 
   await fetch(`${API}/add`, {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      name,
-      room,
-      bed
-    })
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, room, bed })
   });
 
   await loadData();
@@ -198,9 +204,7 @@ function showStudentInfo(id) {
   const cleanMobile = String(student.mobile || "").replace(/\D/g, "");
   const whatsappBtn = document.getElementById("whatsappBtn");
 
-  if (whatsappBtn) {
-    whatsappBtn.href = cleanMobile ? `https://wa.me/91${cleanMobile}` : "#";
-  }
+  whatsappBtn.href = cleanMobile ? `https://wa.me/91${cleanMobile}` : "#";
 
   document.getElementById("studentModal").style.display = "flex";
 }
@@ -220,9 +224,7 @@ async function editStudent() {
 
   await fetch(`/update/${student.id}`, {
     method: "PUT",
-    headers: {
-      "Content-Type": "application/json"
-    },
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       name,
       mobile,
