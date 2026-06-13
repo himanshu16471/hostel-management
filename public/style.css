@@ -473,3 +473,60 @@ body {
 .darkMode .feesTable td {
   border-bottom: 1px solid #334155;
 }
+.sidebar {
+  animation: slideIn 0.7s ease;
+}
+
+.sidebar h2 {
+  animation: pulseLogo 3s infinite;
+}
+
+.card,
+.roomCard,
+.chartCard,
+.emptyBedsPanel,
+.defaultersPanel {
+  animation: fadeUp 0.5s ease;
+}
+
+.bed:hover {
+  transform: translateY(-3px) scale(1.01);
+}
+
+.sidebar a:hover {
+  transform: translateX(8px);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulseLogo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
