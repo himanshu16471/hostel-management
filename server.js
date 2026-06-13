@@ -38,7 +38,7 @@ const paymentReceived = row[6];
 ) {
       students.push({
         id: id++,
-        room: Number(roomNo),
+  room: isNaN(Number(roomNo)) ? String(roomNo).trim() : Number(roomNo),
         bed: String(bed),
         name: String(name).trim(),
         mobile: String(mobile || ""),

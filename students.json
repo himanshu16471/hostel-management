@@ -2278,7 +2278,7 @@
   },
   {
     "id": 208,
-    "room": null,
+    "room": "DORM",
     "bed": "1",
     "name": "Kavish Navin Joshi",
     "mobile": "8889310551",
@@ -2289,7 +2289,7 @@
   },
   {
     "id": 209,
-    "room": null,
+    "room": "DORM",
     "bed": "2",
     "name": "Vansh Kishor Jain",
     "mobile": "9421614398",
@@ -2300,7 +2300,7 @@
   },
   {
     "id": 210,
-    "room": null,
+    "room": "DORM",
     "bed": "3",
     "name": "Laksh Tejraj Gogad",
     "mobile": "9423193271",
@@ -2311,7 +2311,7 @@
   },
   {
     "id": 211,
-    "room": null,
+    "room": "DORM",
     "bed": "4",
     "name": "Akshay Anil Jain",
     "mobile": "9423918667",
@@ -2322,7 +2322,7 @@
   },
   {
     "id": 212,
-    "room": null,
+    "room": "DORM",
     "bed": "5",
     "name": "Ayush Nitin Sharma",
     "mobile": "9545516001",
@@ -2333,7 +2333,7 @@
   },
   {
     "id": 213,
-    "room": null,
+    "room": "DORM",
     "bed": "6",
     "name": "Pratham Santoshkumar Nahata",
     "mobile": "9689839096",
@@ -2344,7 +2344,7 @@
   },
   {
     "id": 214,
-    "room": null,
+    "room": "DORM",
     "bed": "7",
     "name": "Sankalp Sheetalkumar Jain",
     "mobile": "9424070113",
@@ -2355,7 +2355,7 @@
   },
   {
     "id": 215,
-    "room": null,
+    "room": "DORM",
     "bed": "8",
     "name": "Gaurang Milind Sharma",
     "mobile": "8208718482",
@@ -2366,7 +2366,7 @@
   },
   {
     "id": 216,
-    "room": null,
+    "room": "DORM",
     "bed": "9",
     "name": "Veer Anand Sethi",
     "mobile": "9322434650",
@@ -2377,7 +2377,7 @@
   },
   {
     "id": 217,
-    "room": null,
+    "room": "DORM",
     "bed": "10",
     "name": "Tanish Vikas Kochar",
     "mobile": "9604379567",
@@ -2388,7 +2388,7 @@
   },
   {
     "id": 218,
-    "room": null,
+    "room": "DORM",
     "bed": "11",
     "name": "Param Shailesh Jain",
     "mobile": "9421443513",
@@ -2399,7 +2399,7 @@
   },
   {
     "id": 219,
-    "room": null,
+    "room": "DORM",
     "bed": "12",
     "name": "Vatsal Rahul Achaliya",
     "mobile": "9850984144",
@@ -2410,7 +2410,7 @@
   },
   {
     "id": 220,
-    "room": null,
+    "room": "DORM",
     "bed": "13",
     "name": "Bhavesh Ratimohan Modi",
     "mobile": "7387938800",
@@ -2421,7 +2421,7 @@
   },
   {
     "id": 221,
-    "room": null,
+    "room": "DORM",
     "bed": "14",
     "name": "Yug Tushar Jain",
     "mobile": "7773902888",
@@ -2432,7 +2432,7 @@
   },
   {
     "id": 222,
-    "room": null,
+    "room": "DORM",
     "bed": "15",
     "name": "vacate",
     "mobile": "",
@@ -2443,7 +2443,7 @@
   },
   {
     "id": 223,
-    "room": null,
+    "room": "DORM",
     "bed": "16",
     "name": "vacate",
     "mobile": "",
@@ -2454,7 +2454,7 @@
   },
   {
     "id": 224,
-    "room": null,
+    "room": "DORM",
     "bed": "17",
     "name": "vacate",
     "mobile": "",
@@ -2465,7 +2465,7 @@
   },
   {
     "id": 225,
-    "room": null,
+    "room": "DORM",
     "bed": "18",
     "name": "vacate",
     "mobile": "",
@@ -2476,7 +2476,7 @@
   },
   {
     "id": 226,
-    "room": null,
+    "room": "DORM",
     "bed": "19",
     "name": "vacate",
     "mobile": "",
@@ -2487,7 +2487,7 @@
   },
   {
     "id": 227,
-    "room": null,
+    "room": "DORM",
     "bed": "20",
     "name": "vacate",
     "mobile": "",
@@ -2498,7 +2498,7 @@
   },
   {
     "id": 228,
-    "room": null,
+    "room": "DORM",
     "bed": "21",
     "name": "vacate",
     "mobile": "",
@@ -2509,7 +2509,7 @@
   },
   {
     "id": 229,
-    "room": null,
+    "room": "DORM",
     "bed": "22",
     "name": "vacate",
     "mobile": "",
@@ -2520,7 +2520,7 @@
   },
   {
     "id": 230,
-    "room": null,
+    "room": "DORM",
     "bed": "23",
     "name": "vacate",
     "mobile": "",
@@ -2531,7 +2531,7 @@
   },
   {
     "id": 231,
-    "room": null,
+    "room": "DORM",
     "bed": "24",
     "name": "vacate",
     "mobile": "",
@@ -2542,7 +2542,7 @@
   },
   {
     "id": 232,
-    "room": null,
+    "room": "DORM",
     "bed": "25",
     "name": "vacate",
     "mobile": "",
@@ -2553,7 +2553,7 @@
   },
   {
     "id": 233,
-    "room": null,
+    "room": "DORM",
     "bed": "26",
     "name": "vacate",
     "mobile": "",
@@ -2564,7 +2564,7 @@
   },
   {
     "id": 234,
-    "room": null,
+    "room": "DORM",
     "bed": "27",
     "name": "vacate",
     "mobile": "",
@@ -2575,7 +2575,7 @@
   },
   {
     "id": 235,
-    "room": null,
+    "room": "DORM",
     "bed": "28",
     "name": "vacate",
     "mobile": "",
@@ -2586,7 +2586,7 @@
   },
   {
     "id": 236,
-    "room": null,
+    "room": "DORM",
     "bed": "29",
     "name": "vacate",
     "mobile": "",
@@ -2597,7 +2597,7 @@
   },
   {
     "id": 237,
-    "room": null,
+    "room": "DORM",
     "bed": "30",
     "name": "vacate",
     "mobile": "",
@@ -2608,7 +2608,7 @@
   },
   {
     "id": 238,
-    "room": null,
+    "room": "DORM",
     "bed": "31",
     "name": "vacate",
     "mobile": "",
@@ -2619,7 +2619,7 @@
   },
   {
     "id": 239,
-    "room": null,
+    "room": "DORM",
     "bed": "32",
     "name": "vacate",
     "mobile": "",
@@ -2630,7 +2630,7 @@
   },
   {
     "id": 240,
-    "room": null,
+    "room": "DORM",
     "bed": "33",
     "name": "vacate",
     "mobile": "",
@@ -2641,7 +2641,7 @@
   },
   {
     "id": 241,
-    "room": null,
+    "room": "DORM",
     "bed": "34",
     "name": "vacate",
     "mobile": "",
@@ -2652,7 +2652,7 @@
   },
   {
     "id": 242,
-    "room": null,
+    "room": "DORM",
     "bed": "35",
     "name": "vacate",
     "mobile": "",
@@ -2663,7 +2663,7 @@
   },
   {
     "id": 243,
-    "room": null,
+    "room": "DORM",
     "bed": "36",
     "name": "vacate",
     "mobile": "",
@@ -2674,7 +2674,7 @@
   },
   {
     "id": 244,
-    "room": null,
+    "room": "DORM",
     "bed": "37",
     "name": "vacate",
     "mobile": "",
@@ -2685,7 +2685,7 @@
   },
   {
     "id": 245,
-    "room": null,
+    "room": "DORM",
     "bed": "38",
     "name": "vacate",
     "mobile": "",
@@ -2696,7 +2696,7 @@
   },
   {
     "id": 246,
-    "room": null,
+    "room": "DORM",
     "bed": "39",
     "name": "vacate",
     "mobile": "",
@@ -2707,7 +2707,7 @@
   },
   {
     "id": 247,
-    "room": null,
+    "room": "DORM",
     "bed": "40",
     "name": "vacate",
     "mobile": "",
@@ -2718,7 +2718,7 @@
   },
   {
     "id": 248,
-    "room": null,
+    "room": "DORM",
     "bed": "41",
     "name": "vacate",
     "mobile": "",
@@ -2729,7 +2729,7 @@
   },
   {
     "id": 249,
-    "room": null,
+    "room": "DORM",
     "bed": "42",
     "name": "vacate",
     "mobile": "",
@@ -2740,7 +2740,7 @@
   },
   {
     "id": 250,
-    "room": null,
+    "room": "DORM",
     "bed": "43",
     "name": "vacate",
     "mobile": "",
@@ -2751,7 +2751,7 @@
   },
   {
     "id": 251,
-    "room": null,
+    "room": "DORM",
     "bed": "44",
     "name": "vacate",
     "mobile": "",
@@ -2762,7 +2762,7 @@
   },
   {
     "id": 252,
-    "room": null,
+    "room": "DORM",
     "bed": "45",
     "name": "vacate",
     "mobile": "",
@@ -2773,7 +2773,7 @@
   },
   {
     "id": 253,
-    "room": null,
+    "room": "DORM",
     "bed": "46",
     "name": "vacate",
     "mobile": "",
@@ -2784,7 +2784,7 @@
   },
   {
     "id": 254,
-    "room": null,
+    "room": "DORM",
     "bed": "47",
     "name": "vacate",
     "mobile": "",
@@ -2795,7 +2795,7 @@
   },
   {
     "id": 255,
-    "room": null,
+    "room": "DORM",
     "bed": "48",
     "name": "vacate",
     "mobile": "",
@@ -2806,7 +2806,7 @@
   },
   {
     "id": 256,
-    "room": null,
+    "room": "DORM",
     "bed": "49",
     "name": "vacate",
     "mobile": "",
@@ -2817,7 +2817,7 @@
   },
   {
     "id": 257,
-    "room": null,
+    "room": "DORM",
     "bed": "50",
     "name": "vacate",
     "mobile": "",
@@ -2828,7 +2828,7 @@
   },
   {
     "id": 258,
-    "room": null,
+    "room": "DORM",
     "bed": "51",
     "name": "vacate",
     "mobile": "",
@@ -2839,7 +2839,7 @@
   },
   {
     "id": 259,
-    "room": null,
+    "room": "DORM",
     "bed": "52",
     "name": "vacate",
     "mobile": "",
@@ -2850,7 +2850,7 @@
   },
   {
     "id": 260,
-    "room": null,
+    "room": "DORM",
     "bed": "53",
     "name": "vacate",
     "mobile": "",
@@ -2861,7 +2861,7 @@
   },
   {
     "id": 261,
-    "room": null,
+    "room": "DORM",
     "bed": "54",
     "name": "vacate",
     "mobile": "",
@@ -2872,7 +2872,7 @@
   },
   {
     "id": 262,
-    "room": null,
+    "room": "DORM",
     "bed": "55",
     "name": "vacate",
     "mobile": "",
@@ -2883,7 +2883,7 @@
   },
   {
     "id": 263,
-    "room": null,
+    "room": "DORM",
     "bed": "56",
     "name": "vacate",
     "mobile": "",
@@ -2894,7 +2894,7 @@
   },
   {
     "id": 264,
-    "room": null,
+    "room": "DORM",
     "bed": "57",
     "name": "vacate",
     "mobile": "",
@@ -2905,7 +2905,7 @@
   },
   {
     "id": 265,
-    "room": null,
+    "room": "DORM",
     "bed": "58",
     "name": "vacate",
     "mobile": "",
@@ -2916,7 +2916,7 @@
   },
   {
     "id": 266,
-    "room": null,
+    "room": "DORM",
     "bed": "59",
     "name": "vacate",
     "mobile": "",
@@ -2927,7 +2927,7 @@
   },
   {
     "id": 267,
-    "room": null,
+    "room": "DORM",
     "bed": "60",
     "name": "vacate",
     "mobile": "",
@@ -2938,7 +2938,7 @@
   },
   {
     "id": 268,
-    "room": null,
+    "room": "NB 201",
     "bed": "1",
     "name": "Aditya Manoj Agrawal",
     "mobile": "9423162829",
@@ -2949,7 +2949,7 @@
   },
   {
     "id": 269,
-    "room": null,
+    "room": "NB 201",
     "bed": "2",
     "name": "Swayam Manoj Karwa",
     "mobile": "9730228989",
@@ -2960,7 +2960,7 @@
   },
   {
     "id": 270,
-    "room": null,
+    "room": "NB 201",
     "bed": "3",
     "name": "Samyak Narendra Munawat",
     "mobile": "8055552424",
@@ -2971,7 +2971,7 @@
   },
   {
     "id": 271,
-    "room": null,
+    "room": "NB 201",
     "bed": "4",
     "name": "Agam Rahul Sand",
     "mobile": "9890679640",
@@ -2982,7 +2982,7 @@
   },
   {
     "id": 272,
-    "room": null,
+    "room": "NB202",
     "bed": "1",
     "name": "Vishwesh Sachin Chhajed",
     "mobile": "7588096568",
@@ -2993,7 +2993,7 @@
   },
   {
     "id": 273,
-    "room": null,
+    "room": "NB202",
     "bed": "2",
     "name": "Arnik Anup Bedmutha",
     "mobile": "9834952462",
@@ -3004,7 +3004,7 @@
   },
   {
     "id": 274,
-    "room": null,
+    "room": "NB 202",
     "bed": "3",
     "name": "vacate",
     "mobile": "",
@@ -3015,7 +3015,7 @@
   },
   {
     "id": 275,
-    "room": null,
+    "room": "NB202",
     "bed": "4",
     "name": "vacate",
     "mobile": "",
@@ -3026,7 +3026,7 @@
   },
   {
     "id": 276,
-    "room": null,
+    "room": "NB203",
     "bed": "1",
     "name": "Yash Nilesh Sancheti",
     "mobile": "9421536242",
@@ -3037,7 +3037,7 @@
   },
   {
     "id": 277,
-    "room": null,
+    "room": "NB203",
     "bed": "2",
     "name": "Bhavarth Prashant Jain",
     "mobile": "9373622211",
@@ -3048,7 +3048,7 @@
   },
   {
     "id": 278,
-    "room": null,
+    "room": "NB203",
     "bed": "3",
     "name": "Laksh Sachin Bumb",
     "mobile": "7020360789",
@@ -3059,7 +3059,7 @@
   },
   {
     "id": 279,
-    "room": null,
+    "room": "NB203",
     "bed": "4",
     "name": "Dirghayu Prafful Jain",
     "mobile": "9028155520",
@@ -3070,7 +3070,7 @@
   },
   {
     "id": 280,
-    "room": null,
+    "room": "NB204",
     "bed": "1",
     "name": "Rhythm Jayant Surana",
     "mobile": "8087082182",
@@ -3081,7 +3081,7 @@
   },
   {
     "id": 281,
-    "room": null,
+    "room": "NB204",
     "bed": "2",
     "name": "Pratham Satish Soni",
     "mobile": "8983575731",
@@ -3092,7 +3092,7 @@
   },
   {
     "id": 282,
-    "room": null,
+    "room": "NB204",
     "bed": "3",
     "name": "Jayesh Ritesh Chandiwal",
     "mobile": "9403383416",
@@ -3103,7 +3103,7 @@
   },
   {
     "id": 283,
-    "room": null,
+    "room": "NB204",
     "bed": "4",
     "name": "Harsh  Ritesh Jain",
     "mobile": "8799933894",
@@ -3114,7 +3114,7 @@
   },
   {
     "id": 284,
-    "room": null,
+    "room": "NB205",
     "bed": "1",
     "name": "Roshan Manoj Jain 15DAYS",
     "mobile": "9860073664",
@@ -3125,7 +3125,7 @@
   },
   {
     "id": 285,
-    "room": null,
+    "room": "NB205",
     "bed": "2",
     "name": "Akshad Pritesh Bhansali",
     "mobile": "9404568360",
@@ -3136,7 +3136,7 @@
   },
   {
     "id": 286,
-    "room": null,
+    "room": "NB205",
     "bed": "3",
     "name": "Jainam Nilesh Kucheriya",
     "mobile": "9421501521",
@@ -3147,7 +3147,7 @@
   },
   {
     "id": 287,
-    "room": null,
+    "room": "NB205",
     "bed": "4",
     "name": "Aagam Alpesh Jain",
     "mobile": "9326099965",
@@ -3158,7 +3158,7 @@
   },
   {
     "id": 288,
-    "room": null,
+    "room": "NB206",
     "bed": "1",
     "name": "Hardik Shital Jain",
     "mobile": "9156410088",
@@ -3169,7 +3169,7 @@
   },
   {
     "id": 289,
-    "room": null,
+    "room": "NB206",
     "bed": "2",
     "name": "Anuj Sachin Sakhala",
     "mobile": "9860132139",
@@ -3180,7 +3180,7 @@
   },
   {
     "id": 290,
-    "room": null,
+    "room": "NB206",
     "bed": "3",
     "name": "vacate",
     "mobile": "",
@@ -3191,7 +3191,7 @@
   },
   {
     "id": 291,
-    "room": null,
+    "room": "NB206",
     "bed": "4",
     "name": "vacate",
     "mobile": "",
@@ -3202,7 +3202,7 @@
   },
   {
     "id": 292,
-    "room": null,
+    "room": "NB207",
     "bed": "1",
     "name": "Vedant Rahul Agrawal",
     "mobile": "9657023999",
@@ -3213,7 +3213,7 @@
   },
   {
     "id": 293,
-    "room": null,
+    "room": "NB207",
     "bed": "2",
     "name": "Mayank Abhaykumar Jain",
     "mobile": "9405445997",
@@ -3224,7 +3224,7 @@
   },
   {
     "id": 294,
-    "room": null,
+    "room": "NB207",
     "bed": "3",
     "name": "Vidhit Rakesh Raka",
     "mobile": "9423173753",
@@ -3235,7 +3235,7 @@
   },
   {
     "id": 295,
-    "room": null,
+    "room": "NB207",
     "bed": "4",
     "name": "Meet Rakesh Raka",
     "mobile": "9028940558",
@@ -3246,7 +3246,7 @@
   },
   {
     "id": 296,
-    "room": null,
+    "room": "NB208",
     "bed": "1",
     "name": "Sayyam Rakesh Bafana",
     "mobile": "9425075912",
@@ -3257,7 +3257,7 @@
   },
   {
     "id": 297,
-    "room": null,
+    "room": "NB208",
     "bed": "2",
     "name": "Vinit Umesh Lodha",
     "mobile": "9922039251",
@@ -3268,7 +3268,7 @@
   },
   {
     "id": 298,
-    "room": null,
+    "room": "NB208",
     "bed": "3",
     "name": "Naman Hukumchand Jain",
     "mobile": "9403592970",
@@ -3279,7 +3279,7 @@
   },
   {
     "id": 299,
-    "room": null,
+    "room": "NB208",
     "bed": "4",
     "name": "vacate",
     "mobile": "",
@@ -3290,7 +3290,7 @@
   },
   {
     "id": 300,
-    "room": null,
+    "room": "NB209",
     "bed": "1",
     "name": "Anay Kunal Kapadia",
     "mobile": "9422285503",
@@ -3301,7 +3301,7 @@
   },
   {
     "id": 301,
-    "room": null,
+    "room": "NB209",
     "bed": "2",
     "name": "Yash Tushar Lunawat",
     "mobile": "9423933854",
@@ -3312,7 +3312,7 @@
   },
   {
     "id": 302,
-    "room": null,
+    "room": "NB209",
     "bed": "3",
     "name": "Hardik Dipak Kumat",
     "mobile": "9604587805",
@@ -3323,7 +3323,7 @@
   },
   {
     "id": 303,
-    "room": null,
+    "room": "NB209",
     "bed": "4",
     "name": "Nikunj Ravi Agrawal",
     "mobile": "8888879146",
@@ -3334,7 +3334,7 @@
   },
   {
     "id": 304,
-    "room": null,
+    "room": "NB210",
     "bed": "1",
     "name": "Pranav Dipak Bora",
     "mobile": "9422251991",
@@ -3345,7 +3345,7 @@
   },
   {
     "id": 305,
-    "room": null,
+    "room": "NB210",
     "bed": "2",
     "name": "Ayush Praful Parakh",
     "mobile": "9623918147",
@@ -3356,7 +3356,7 @@
   },
   {
     "id": 306,
-    "room": null,
+    "room": "NB210",
     "bed": "3",
     "name": "Ronak Manish Burad",
     "mobile": "7588513465",
@@ -3367,7 +3367,7 @@
   },
   {
     "id": 307,
-    "room": null,
+    "room": "NB210",
     "bed": "4",
     "name": "Saiyyam Amit Khabiya",
     "mobile": "9881282438",
@@ -3378,7 +3378,7 @@
   },
   {
     "id": 308,
-    "room": null,
+    "room": "NB301",
     "bed": "1",
     "name": "Tatva Sagar Vakhariya",
     "mobile": "9423193328",
@@ -3389,7 +3389,7 @@
   },
   {
     "id": 309,
-    "room": null,
+    "room": "NB301",
     "bed": "2",
     "name": "Veer Pawan Jain",
     "mobile": "9421945007",
@@ -3400,7 +3400,7 @@
   },
   {
     "id": 310,
-    "room": null,
+    "room": "NB301",
     "bed": "3",
     "name": "Dev Rajesh Kochar",
     "mobile": "9423255314",
@@ -3411,7 +3411,7 @@
   },
   {
     "id": 311,
-    "room": null,
+    "room": "NB301",
     "bed": "4",
     "name": "vacate",
     "mobile": "",
@@ -3422,7 +3422,7 @@
   },
   {
     "id": 312,
-    "room": null,
+    "room": "NB302",
     "bed": "1",
     "name": "Urjit Amit Nahar",
     "mobile": "8208174898",
@@ -3433,7 +3433,7 @@
   },
   {
     "id": 313,
-    "room": null,
+    "room": "NB302",
     "bed": "2",
     "name": "Tirth Ankush Agrawal",
     "mobile": "9422766995",
@@ -3444,7 +3444,7 @@
   },
   {
     "id": 314,
-    "room": null,
+    "room": "NB302",
     "bed": "3",
     "name": "Krishna Dinesh Sharma",
     "mobile": "9421122124",
@@ -3455,7 +3455,7 @@
   },
   {
     "id": 315,
-    "room": null,
+    "room": "NB302",
     "bed": "4",
     "name": "Alok Nitin Bothara",
     "mobile": "9730461999",
@@ -3466,7 +3466,7 @@
   },
   {
     "id": 316,
-    "room": null,
+    "room": "NB303",
     "bed": "1",
     "name": "Vansh Narendra Garg",
     "mobile": "9527650777",
@@ -3477,7 +3477,7 @@
   },
   {
     "id": 317,
-    "room": null,
+    "room": "NB303",
     "bed": "2",
     "name": "Tanish  Sanjay Jain",
     "mobile": "9422760501",
@@ -3488,7 +3488,7 @@
   },
   {
     "id": 318,
-    "room": null,
+    "room": "NB303",
     "bed": "3",
     "name": "Samyak Tarachand Munot",
     "mobile": "9822608701",
@@ -3499,7 +3499,7 @@
   },
   {
     "id": 319,
-    "room": null,
+    "room": "NB303",
     "bed": "4",
     "name": "Ritesh Bharamshetty Jagshetty",
     "mobile": "9860973868",
@@ -3510,7 +3510,7 @@
   },
   {
     "id": 320,
-    "room": null,
+    "room": "NB304",
     "bed": "1",
     "name": "Vivek Sandip Gandhi",
     "mobile": "9011065474",
@@ -3521,7 +3521,7 @@
   },
   {
     "id": 321,
-    "room": null,
+    "room": "NB304",
     "bed": "2",
     "name": "Param Uttam Lunawat",
     "mobile": "9422229504",
@@ -3532,7 +3532,7 @@
   },
   {
     "id": 322,
-    "room": null,
+    "room": "NB304",
     "bed": "3",
     "name": "Darsh Sachin Kankariya",
     "mobile": "9890988478",
@@ -3543,7 +3543,7 @@
   },
   {
     "id": 323,
-    "room": null,
+    "room": "NB304",
     "bed": "4",
     "name": "Vaibhav Avinash Chordiya",
     "mobile": "9850233312",
@@ -3554,7 +3554,7 @@
   },
   {
     "id": 324,
-    "room": null,
+    "room": "NB305",
     "bed": "1",
     "name": "Jitaksh Swagat Jain",
     "mobile": "9552771888",
@@ -3565,7 +3565,7 @@
   },
   {
     "id": 325,
-    "room": null,
+    "room": "NB305",
     "bed": "2",
     "name": "Aayush Ritesh Jain",
     "mobile": "8208089716",
@@ -3576,7 +3576,7 @@
   },
   {
     "id": 326,
-    "room": null,
+    "room": "NB305",
     "bed": "3",
     "name": "Saksham Anil Sakhala",
     "mobile": "8767282625",
@@ -3587,7 +3587,7 @@
   },
   {
     "id": 327,
-    "room": null,
+    "room": "NB305",
     "bed": "4",
     "name": "Angad Atulkumar Jain",
     "mobile": "9423783898",
@@ -3598,7 +3598,7 @@
   },
   {
     "id": 328,
-    "room": null,
+    "room": "NB306",
     "bed": "1",
     "name": "Gaurav Vivek Agrawal",
     "mobile": "9922240300",
@@ -3609,7 +3609,7 @@
   },
   {
     "id": 329,
-    "room": null,
+    "room": "NB306",
     "bed": "2",
     "name": "Hardik Pavan Agrawal",
     "mobile": "9359337554",
@@ -3620,7 +3620,7 @@
   },
   {
     "id": 330,
-    "room": null,
+    "room": "NB306",
     "bed": "3",
     "name": "vacate",
     "mobile": "",
@@ -3631,7 +3631,7 @@
   },
   {
     "id": 331,
-    "room": null,
+    "room": "NB306",
     "bed": "4",
     "name": "vacate",
     "mobile": "",
@@ -3642,7 +3642,7 @@
   },
   {
     "id": 332,
-    "room": null,
+    "room": "NB307",
     "bed": "1",
     "name": "Lokesh Premchand Jain",
     "mobile": "9420427742",
@@ -3653,7 +3653,7 @@
   },
   {
     "id": 333,
-    "room": null,
+    "room": "NB307",
     "bed": "2",
     "name": "Vinit Ketan Khivansara",
     "mobile": "7721891638",
@@ -3664,7 +3664,7 @@
   },
   {
     "id": 334,
-    "room": null,
+    "room": "NB307",
     "bed": "3",
     "name": "Soham Vaibhav Lodha",
     "mobile": "9890549259",
@@ -3675,7 +3675,7 @@
   },
   {
     "id": 335,
-    "room": null,
+    "room": "NB307",
     "bed": "4",
     "name": "vacate",
     "mobile": "",
@@ -3686,7 +3686,7 @@
   },
   {
     "id": 336,
-    "room": null,
+    "room": "NB308",
     "bed": "1",
     "name": "Vardhan Vaibhav Bafna",
     "mobile": "9422187087",
@@ -3697,7 +3697,7 @@
   },
   {
     "id": 337,
-    "room": null,
+    "room": "NB308",
     "bed": "2",
     "name": "Suvrath Swapnil Nahar",
     "mobile": "7385677776",
@@ -3708,7 +3708,7 @@
   },
   {
     "id": 338,
-    "room": null,
+    "room": "NB308",
     "bed": "3",
     "name": "vacate",
     "mobile": "",
@@ -3719,7 +3719,7 @@
   },
   {
     "id": 339,
-    "room": null,
+    "room": "NB308",
     "bed": "4",
     "name": "vacate",
     "mobile": "",
@@ -3730,7 +3730,7 @@
   },
   {
     "id": 340,
-    "room": null,
+    "room": "NB309",
     "bed": "1",
     "name": "Soumya Sandeep Jain",
     "mobile": "9834682130",
@@ -3741,7 +3741,7 @@
   },
   {
     "id": 341,
-    "room": null,
+    "room": "NB309",
     "bed": "2",
     "name": "Yash Hemant Agrawal",
     "mobile": "8208275084",
@@ -3752,7 +3752,7 @@
   },
   {
     "id": 342,
-    "room": null,
+    "room": "NB309",
     "bed": "3",
     "name": "Anshuman Nitesh Tak",
     "mobile": "9960302544",
@@ -3763,7 +3763,7 @@
   },
   {
     "id": 343,
-    "room": null,
+    "room": "NB309",
     "bed": "4",
     "name": "Jainam Sachin Bedmutha",
     "mobile": "9422722922",
@@ -3774,7 +3774,7 @@
   },
   {
     "id": 344,
-    "room": null,
+    "room": "NB310",
     "bed": "1",
     "name": "Aagam Tushar Chordiya",
     "mobile": "9923311833",
@@ -3785,7 +3785,7 @@
   },
   {
     "id": 345,
-    "room": null,
+    "room": "NB310",
     "bed": "2",
     "name": "Harshvardhan Chetan Jain",
     "mobile": "944840066",
@@ -3796,7 +3796,7 @@
   },
   {
     "id": 346,
-    "room": null,
+    "room": "NB310",
     "bed": "3",
     "name": "Jainam Jitendra Tatiya",
     "mobile": "9420101475",
@@ -3807,7 +3807,7 @@
   },
   {
     "id": 347,
-    "room": null,
+    "room": "NB310",
     "bed": "4",
     "name": "vacate",
     "mobile": "",
@@ -3818,7 +3818,7 @@
   },
   {
     "id": 348,
-    "room": null,
+    "room": "NB401",
     "bed": "1",
     "name": "vacate",
     "mobile": "",
@@ -3829,7 +3829,7 @@
   },
   {
     "id": 349,
-    "room": null,
+    "room": "NB401",
     "bed": "2",
     "name": "vacate",
     "mobile": "",
@@ -3840,7 +3840,7 @@
   },
   {
     "id": 350,
-    "room": null,
+    "room": "NB401",
     "bed": "3",
     "name": "vacate",
     "mobile": "",
@@ -3851,7 +3851,7 @@
   },
   {
     "id": 351,
-    "room": null,
+    "room": "NB401",
     "bed": "4",
     "name": "vacate",
     "mobile": "",
@@ -3862,7 +3862,7 @@
   },
   {
     "id": 352,
-    "room": null,
+    "room": "NB402",
     "bed": "1",
     "name": "Prasham Suyog Bhandari",
     "mobile": "9423144551",
@@ -3873,7 +3873,7 @@
   },
   {
     "id": 353,
-    "room": null,
+    "room": "NB402",
     "bed": "2",
     "name": "Anuj Ashish Bhandari",
     "mobile": "9823355618",
@@ -3884,7 +3884,7 @@
   },
   {
     "id": 354,
-    "room": null,
+    "room": "NB402",
     "bed": "3",
     "name": "Himanshu Yogesh Jain",
     "mobile": "9359280644",
@@ -3895,7 +3895,7 @@
   },
   {
     "id": 355,
-    "room": null,
+    "room": "NB402",
     "bed": "4",
     "name": "Naitik Shrenik Bora",
     "mobile": "9673996452",
@@ -3906,7 +3906,7 @@
   },
   {
     "id": 356,
-    "room": null,
+    "room": "NB403",
     "bed": "1",
     "name": "Pranit Abhay Lunawat",
     "mobile": "9422549133",
@@ -3917,7 +3917,7 @@
   },
   {
     "id": 357,
-    "room": null,
+    "room": "NB403",
     "bed": "2",
     "name": "Arham Kewal Lodha",
     "mobile": "9834784174",
@@ -3928,7 +3928,7 @@
   },
   {
     "id": 358,
-    "room": null,
+    "room": "NB403",
     "bed": "3",
     "name": "Himanshu Suresh Lalwani",
     "mobile": "9765441707",
@@ -3939,7 +3939,7 @@
   },
   {
     "id": 359,
-    "room": null,
+    "room": "NB403",
     "bed": "4",
     "name": "vacate",
     "mobile": "",
@@ -3950,7 +3950,7 @@
   },
   {
     "id": 360,
-    "room": null,
+    "room": "NB404",
     "bed": "1",
     "name": "Darshil Bharat Ajmera",
     "mobile": "9423900085",
@@ -3961,7 +3961,7 @@
   },
   {
     "id": 361,
-    "room": null,
+    "room": "NB404",
     "bed": "2",
     "name": "Naitik Sumit Jain",
     "mobile": "9422237082",
@@ -3972,7 +3972,7 @@
   },
   {
     "id": 362,
-    "room": null,
+    "room": "NB404",
     "bed": "3",
     "name": "Kavya Anand Kale",
     "mobile": "9371858462",
@@ -3983,7 +3983,7 @@
   },
   {
     "id": 363,
-    "room": null,
+    "room": "NB404",
     "bed": "4",
     "name": "Chinmay Pritam Lodha",
     "mobile": "9850603141",
@@ -3994,7 +3994,7 @@
   },
   {
     "id": 364,
-    "room": null,
+    "room": "NB405",
     "bed": "1",
     "name": "Aaditya Tushar Dhuppad",
     "mobile": "8087906264",
@@ -4005,7 +4005,7 @@
   },
   {
     "id": 365,
-    "room": null,
+    "room": "NB405",
     "bed": "2",
     "name": "Ridham Rakeshchandra Maliwal",
     "mobile": "9960012379",
@@ -4016,7 +4016,7 @@
   },
   {
     "id": 366,
-    "room": null,
+    "room": "NB405",
     "bed": "3",
     "name": "Vishwesh Pawankumar Varma",
     "mobile": "9623615390",
@@ -4027,7 +4027,7 @@
   },
   {
     "id": 367,
-    "room": null,
+    "room": "NB405",
     "bed": "4",
     "name": "Aadi  Shailesh Bhatewara",
     "mobile": "9595944333",
@@ -4038,7 +4038,7 @@
   },
   {
     "id": 368,
-    "room": null,
+    "room": "NB406",
     "bed": "1",
     "name": "Manthan Mukesh Bohara",
     "mobile": "9421686100",
@@ -4049,7 +4049,7 @@
   },
   {
     "id": 369,
-    "room": null,
+    "room": "NB406",
     "bed": "2",
     "name": "Chintan Rohit Surana",
     "mobile": "9922441219",
@@ -4060,7 +4060,7 @@
   },
   {
     "id": 370,
-    "room": null,
+    "room": "NB406",
     "bed": "3",
     "name": "Chirayu Jitendra Soni",
     "mobile": "9579000522",
@@ -4071,7 +4071,7 @@
   },
   {
     "id": 371,
-    "room": null,
+    "room": "NB406",
     "bed": "4",
     "name": "Akshad Anand Chopda",
     "mobile": "9326877733",
@@ -4082,7 +4082,7 @@
   },
   {
     "id": 372,
-    "room": null,
+    "room": "NB407",
     "bed": "1",
     "name": "Tirth Nitin Raka",
     "mobile": "9130915599",
@@ -4093,7 +4093,7 @@
   },
   {
     "id": 373,
-    "room": null,
+    "room": "NB407",
     "bed": "2",
     "name": "Bharat Sulabh Jain",
     "mobile": "9325958853",
@@ -4104,7 +4104,7 @@
   },
   {
     "id": 374,
-    "room": null,
+    "room": "NB407",
     "bed": "3",
     "name": "Vansh Mithun Kala",
     "mobile": "9423180706",
@@ -4115,7 +4115,7 @@
   },
   {
     "id": 375,
-    "room": null,
+    "room": "NB407",
     "bed": "4",
     "name": "Aagam Pravin Jain",
     "mobile": "8888727888",
@@ -4126,7 +4126,7 @@
   },
   {
     "id": 376,
-    "room": null,
+    "room": "NB408",
     "bed": "1",
     "name": "Samyak Rupesh Gugale",
     "mobile": "7249724444",
@@ -4137,7 +4137,7 @@
   },
   {
     "id": 377,
-    "room": null,
+    "room": "NB408",
     "bed": "2",
     "name": "Arnav Navin Agrawal",
     "mobile": "9356579068",
@@ -4148,7 +4148,7 @@
   },
   {
     "id": 378,
-    "room": null,
+    "room": "NB408",
     "bed": "3",
     "name": "Vansh Kishor Jain",
     "mobile": "8554994455",
@@ -4159,7 +4159,7 @@
   },
   {
     "id": 379,
-    "room": null,
+    "room": "NB408",
     "bed": "4",
     "name": "Ruchit Lalit  Jain",
     "mobile": "9850203928",
@@ -4170,7 +4170,7 @@
   },
   {
     "id": 380,
-    "room": null,
+    "room": "NB409",
     "bed": "1",
     "name": "Jay Anand Jain",
     "mobile": "7620919500",
@@ -4181,7 +4181,7 @@
   },
   {
     "id": 381,
-    "room": null,
+    "room": "NB409",
     "bed": "2",
     "name": "vacate",
     "mobile": "",
@@ -4192,7 +4192,7 @@
   },
   {
     "id": 382,
-    "room": null,
+    "room": "NB409",
     "bed": "3",
     "name": "vacate",
     "mobile": "",
@@ -4203,7 +4203,7 @@
   },
   {
     "id": 383,
-    "room": null,
+    "room": "NB409",
     "bed": "4",
     "name": "vacate",
     "mobile": "",
@@ -4214,7 +4214,7 @@
   },
   {
     "id": 384,
-    "room": null,
+    "room": "NB410",
     "bed": "1",
     "name": "Nirav Navin Gadiya",
     "mobile": "",
@@ -4225,7 +4225,7 @@
   },
   {
     "id": 385,
-    "room": null,
+    "room": "NB410",
     "bed": "2",
     "name": "Yug Santosh  Jain",
     "mobile": "",
@@ -4236,7 +4236,7 @@
   },
   {
     "id": 386,
-    "room": null,
+    "room": "NB410",
     "bed": "3",
     "name": "Preet Vishal Lohade",
     "mobile": "",
@@ -4247,7 +4247,7 @@
   },
   {
     "id": 387,
-    "room": null,
+    "room": "NB410",
     "bed": "4",
     "name": "Kaushal Umesh Shah",
     "mobile": "",
