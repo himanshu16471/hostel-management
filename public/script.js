@@ -69,13 +69,16 @@ function showStudents(students) {
   students.forEach(student => {
     if (!rooms[student.room]) rooms[student.room] = [];
     rooms[student.room].push(student);
-    Object.keys(rooms).forEach(room => {
-  // create room card
+   
   });
 
   Object.keys(rooms)
-    .sort((a, b) => Number(a) - Number(b))
-    .forEach(room => {
+  .sort((a, b) => {
+    if (a === "DORM") return 1;
+    if (b === "DORM") return -1;
+    return Number(a) - Number(b);
+  })
+  .forEach(room => {
       let bedsHTML = "";
 
       rooms[room].forEach(student => {
