@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fees Report</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+  <h1>💰 Fees Report</h1>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Total Outstanding</h3>
+      <p id="totalOutstanding">₹0</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Received</h3>
+      <p id="totalReceived">₹0</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Pending</h3>
+      <p id="totalPending">₹0</p>
+    </div>
+  </div>
+
+  <div class="inputBox">
+    <input
+      id="searchFees"
+      placeholder="🔍 Search Student / Room"
+      onkeyup="loadFees()"
+    >
+
+    <select id="statusFilter" onchange="loadFees()">
+      <option value="all">All</option>
+      <option value="paid">Paid</option>
+      <option value="pending">Pending</option>
+    </select>
+
+    <button onclick="window.open('/download-fees-report')">
+      📄 Download PDF
+    </button>
+  </div>
+
+  <table class="feesTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Room</th>
+        <th>Outstanding</th>
+        <th>Received</th>
+        <th>Pending</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+
+    <tbody id="feesTableBody"></tbody>
+  </table>
+
+</div>
+
+<script src="fees.js"></script>
+
+</body>
+</html>

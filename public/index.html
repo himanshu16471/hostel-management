@@ -3,7 +3,9 @@
 <head>
   <title>Shree Jain Oswal Boarding Management</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
 <script>
   if (localStorage.getItem("loggedIn") !== "true") {
@@ -13,13 +15,18 @@
 
 <div class="container">
   <div class="sidebar">
+    <p id="roleBadge"></p>
     <h2>🏨 SJOB<br>Database</h2>
 
     <a class="active" href="#">📊 Dashboard</a>
-    <a href="#roomsSection">🏠 Rooms</a>
+    <a href="#oldBuildingSection">🏚 Old Building</a>
+    <a href="#newBuildingSection">🏢 New Building</a>
     <a href="#dormSection">🛏 Dorm</a>
+    <a href="fees.html">💰 Fees Report</a>
     <a href="/download-fees-report">📄 PDF Report</a>
     <a href="#" onclick="logout()">🚪 Logout</a>
+
+    <button class="darkBtn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
 
     <p class="sidebar-footer">SJOB Hostel ERP</p>
   </div>
@@ -59,9 +66,22 @@
       </div>
     </div>
 
+    <h2 class="sectionTitle">📈 Charts Dashboard</h2>
+    <div class="defaultersPanel">
+  <h2>🏆 Top 10 Fee Defaulters</h2>
+  <div id="topDefaulters"></div>
+</div>
+
+    <div class="chartsGrid">
+      <div class="chartCard">
+        <h3>Building Occupancy</h3>
+        <canvas id="buildingChart"></canvas>
+      </div>
+    </div>
+
     <div class="inputBox">
       <input id="name" placeholder="👨‍🎓 Student Name">
-      <input id="room" placeholder="🏠 Room Number / DORM">
+      <input id="room" placeholder="🏠 Room Number / DORM / NB201">
       <input id="bed" placeholder="🛏 Bed Number">
       <button class="btn primary" onclick="addStudent()">+ Allocate Bed</button>
     </div>
@@ -78,8 +98,11 @@
       </button>
     </div>
 
-    <h2 id="roomsSection" class="sectionTitle">🏠 Hostel Rooms</h2>
-    <div id="table"></div>
+    <h2 id="oldBuildingSection" class="sectionTitle">🏚 Old Building</h2>
+    <div id="oldBuildingTable"></div>
+
+    <h2 id="newBuildingSection" class="sectionTitle">🏢 New Building</h2>
+    <div id="newBuildingTable"></div>
 
     <h2 id="dormSection" class="sectionTitle">🛏 Dorm Section</h2>
     <div id="dormTable"></div>
