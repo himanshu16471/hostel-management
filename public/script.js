@@ -89,7 +89,7 @@ function showEmptyBeds(vacantList) {
         .map(
           bed => `
             <div class="emptyBedItem">
-             Room No. ${bed.room } - Bed ${bed No.bed}
+             Room No. ${bed.room } - Bed ${bed.bed}
             </div>
           `
         )
