@@ -88,13 +88,13 @@ function showEmptyBeds(vacantList) {
         )
         .map(
           bed => `
-            <div class="emptyBedItem">
+            <div class="vacateBedItem">
              Room No. ${bed.room } - Bed No. ${bed.bed}
             </div>
           `
         )
         .join("")
-    : "<p>No empty beds available</p>";
+    : "<p>No vacate beds available</p>";
 }
 
 function showRoomCards(students) {
