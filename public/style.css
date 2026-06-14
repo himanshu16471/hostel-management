@@ -120,9 +120,9 @@ body {
   font-weight: bold;
 }
 
-/* EMPTY BEDS */
+/* VACATE BEDS */
 
-.emptyBedsPanel {
+.vacateBedsPanel {
   width: 100%;
   min-height: 140px;
   max-height: 180px;
@@ -133,18 +133,18 @@ body {
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
-.emptyBedsPanel h2 {
+.vacateBedsPanel h2 {
   font-size: 22px;
   margin-bottom: 10px;
 }
 
-#emptyBedsList {
+#vacateBedsList {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.emptyBedItem {
+.vacateBedItem {
   background: #dcfce7;
   color: #166534;
   padding: 8px 12px;
@@ -445,7 +445,7 @@ body {
 .darkMode .roomCard,
 .darkMode .chartCard,
 .darkMode .modalBox,
-.darkMode .emptyBedsPanel,
+.darkMode .vacateBedsPanel,
 .darkMode .defaultersPanel,
 .darkMode .feesTable {
   background: #1e293b;
@@ -484,7 +484,7 @@ body {
 .card,
 .roomCard,
 .chartCard,
-.emptyBedsPanel,
+.vacateBedsPanel,
 .defaultersPanel {
   animation: fadeUp 0.5s ease;
 }
