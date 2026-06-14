@@ -123,14 +123,15 @@ body {
 /* VACATE BEDS */
 
 .vacateBedsPanel {
-  width: 100%;
-  min-height: 140px;
-  max-height: 180px;
-  overflow-y: auto;
+  .vacateBedsPanel {
   background: white;
   border-radius: 18px;
-  padding: 15px;
+  padding: 20px;
+  margin-bottom: 25px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  max-height: 180px;
+  overflow-y: auto;
+}
 }
 
 .vacateBedsPanel h2 {
@@ -529,4 +530,40 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
+}
+.vacateBedsPanel {
+  width: 100%;
+  min-height: 140px;
+  max-height: 180px;
+  overflow-y: auto;
+  background: white;
+  border-radius: 18px;
+  padding: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+}
+
+.vacateBedsPanel h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.darkMode .vacateBedsPanel {
+  background: #1e293b;
+  color: white;
+}
+#emptyBedsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.emptyBedItem {
+  background: #dcfce7;
+  color: #166534;
+  padding: 10px 15px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #bbf7d0;
 }

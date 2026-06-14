@@ -48,12 +48,25 @@ function showStudents(students) {
   const occupiedBeds = allStudents.filter(s => !isVacant(s)).length;
   const vacantList = allStudents.filter(s => isVacant(s));
 
-  const totalBeds = allStudents.length;
+  const oldVacant = allStudents.filter(
+    s => getBuildingType(s) === "Old Building" && isVacant(s)
+  ).length;
 
-document.getElementById("totalBeds").innerText = totalBeds;
+  const newVacant = allStudents.filter(
+    s => getBuildingType(s) === "New Building" && isVacant(s)
+  ).length;
+
+  const dormVacant = allStudents.filter(
+    s => getBuildingType(s) === "Dorm" && isVacant(s)
+  ).length;
+
+  const totalAvailableBeds = oldVacant + newVacant + dormVacant;
+
+  document.getElementById("totalBeds").innerText = allStudents.length;
   document.getElementById("occupied").innerText = occupiedBeds;
-  document.getElementById("available").innerText = vacantList.length;
-
+  console.log(document.getElementById("available"));
+  document.getElementById("available").innerText = totalAvailableBeds;
+console.log("AVAILABLE CHECK:", oldVacant, newVacant, dormVacant, totalAvailableBeds);
   const totalOutstanding = allStudents.reduce(
     (sum, student) => sum + getNumber(student.outstandingFees),
     0
@@ -70,16 +83,42 @@ document.getElementById("totalBeds").innerText = totalBeds;
   document.getElementById("totalReceived").innerText =
     totalReceived.toLocaleString();
 
-  showVacateBeds(vacantList);
+  showVacantSummary(oldVacant, newVacant, dormVacant);
+  showVacantBeds(vacantList);
   showRoomCards(students);
   showBuildingChart(allStudents);
   showTopDefaulters(allStudents);
 }
 
-function showVacateBeds(vacantList) {
-  const vacateBedsDiv = document.getElementById("vacateBedsList");
+function showVacantSummary(oldVacant, newVacant, dormVacant) {
+  const box = document.getElementById("vacantSummary");
 
-  vacateBedsDiv.innerHTML = vacantList.length
+  if (!box) return;
+
+  box.innerHTML = `
+    <div class="defaulterItem">
+      <span>🏚 Old Building</span>
+      <b>${oldVacant} Beds</b>
+    </div>
+
+    <div class="defaulterItem">
+      <span>🏢 New Building</span>
+      <b>${newVacant} Beds</b>
+    </div>
+
+    <div class="defaulterItem">
+      <span>🛏 Dorm</span>
+      <b>${dormVacant} Beds</b>
+    </div>
+  `;
+}
+
+function showVacantBeds(vacantList) {
+  const emptyBedsDiv = document.getElementById("emptyBedsList");
+
+  if (!emptyBedsDiv) return;
+
+  emptyBedsDiv.innerHTML = vacantList.length
     ? vacantList
         .sort((a, b) =>
           String(a.room).localeCompare(String(b.room), undefined, {
@@ -88,13 +127,13 @@ function showVacateBeds(vacantList) {
         )
         .map(
           bed => `
-            <div class="vacateBedItem">
-             Room No. ${bed.room } - vacate Bed No. ${bed.bed}
+            <div class="emptyBedItem">
+              Room No. ${bed.room} - Bed No. ${bed.bed}
             </div>
           `
         )
         .join("")
-    : "<p>No vacate beds available</p>";
+    : "<p>No vacant beds available</p>";
 }
 
 function showRoomCards(students) {

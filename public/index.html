@@ -16,6 +16,7 @@
 <div class="container">
   <div class="sidebar">
     <p id="roleBadge"></p>
+
     <h2>🏨 SJOB<br>Database</h2>
 
     <a class="active" href="#">📊 Dashboard</a>
@@ -46,7 +47,7 @@
       </div>
 
       <div class="card">
-        <h3>Available Beds</h3>
+        <h3>Available</h3>
         <p id="available">0</p>
       </div>
 
@@ -59,24 +60,30 @@
         <h3>Total Payment Received</h3>
         <p>₹<span id="totalReceived">0</span></p>
       </div>
+    </div>
 
-      <div class="vacateBedsPanel">
-        <h2>🟢 Vacate Beds</h2>
-        <div id="emptyBedsList"></div>
-      </div>
+    <div class="defaultersPanel">
+      <h2>🏠 Vacant Beds Summary</h2>
+      <div id="vacantSummary"></div>
+    </div>
+
+    <div class="vacateBedsPanel">
+      <h2>🟢 Vacant Beds</h2>
+      <div id="emptyBedsList"></div>
     </div>
 
     <h2 class="sectionTitle">📈 Charts Dashboard</h2>
-    <div class="defaultersPanel">
-  <h2>🏆 Top 10 Fee Defaulters</h2>
-  <div id="topDefaulters"></div>
-</div>
 
     <div class="chartsGrid">
       <div class="chartCard">
         <h3>Building Occupancy</h3>
         <canvas id="buildingChart"></canvas>
       </div>
+    </div>
+
+    <div class="defaultersPanel">
+      <h2>🏆 Top 10 Fee Defaulters</h2>
+      <div id="topDefaulters"></div>
     </div>
 
     <div class="inputBox">
@@ -135,6 +142,7 @@
 <script>
 function logout() {
   localStorage.removeItem("loggedIn");
+  localStorage.removeItem("role");
   window.location.href = "login.html";
 }
 </script>
