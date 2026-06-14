@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Shree Jain Oswal Boarding Management</title>
+  <title>Girls Hostel Management</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -17,22 +17,14 @@
   <div class="sidebar">
     <p id="roleBadge"></p>
 
-    <h2>🏨 SJOB<br>Database</h2>
+    <h2>👧 Girls Hostel<br>Database</h2>
+    <a href="index.html">👦 Boys Hostel</a>
 
-    <a class="active" href="#">📊 Dashboard</a>
-    <a href="girls-hostel.html">👧 Girls Hostel</a>
-
-    <a href="#sakhalaHostel">
-      🏚 SHRI MOHANLALJI C. SAKHALA VIDYARTHI CHHATRALAYA
-    </a>
-
-    <a href="#dhariwalHostel">
-      🏢 SHRI PRAKASHJI R DHARIWAL JAIN HOSTEL
-    </a>
-
-    <a href="#dormHostel">
-      🛏 SHRI MOHANLALJI C. SAKHALA VIDYARTHI CHHATRALAYA
-    </a>
+    <a class="active" href="#">📊 Girls Dashboard</a>
+<a href="girls-hostel.html">👧 Girls Hostel</a>
+    <a href="#girlsOldHostel">🏚 Girls Old Building</a>
+    <a href="#girlsNewHostel">🏢 Girls New Building</a>
+    <a href="#girlsDormHostel">🛏 Girls Dorm</a>
 
     <a href="fees.html">💰 Fees Report</a>
     <a href="/download-fees-report">📄 PDF Report</a>
@@ -40,11 +32,11 @@
 
     <button class="darkBtn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
 
-    <p class="sidebar-footer">SJOB Hostel ERP</p>
+    <p class="sidebar-footer">Girls Hostel ERP</p>
   </div>
 
   <div class="main">
-    <h1>Shree Jain Oswal Boarding Management</h1>
+    <h1>Girls Hostel Management</h1>
 
     <div class="cards">
       <div class="card">
@@ -74,31 +66,31 @@
     </div>
 
     <div class="defaultersPanel">
-      <h2>🏠 Vacant Beds Summary</h2>
+      <h2>🏠 Girls Hostel Vacant Beds Summary</h2>
       <div id="vacantSummary"></div>
     </div>
 
     <div class="vacateBedsPanel">
-      <h2>🟢 Vacant Beds</h2>
+      <h2>🟢 Girls Hostel Vacant Beds</h2>
       <div id="emptyBedsList"></div>
     </div>
 
-    <h2 class="sectionTitle">📈 Charts Dashboard</h2>
+    <h2 class="sectionTitle">📈 Girls Hostel Charts Dashboard</h2>
 
     <div class="chartsGrid">
       <div class="chartCard">
-        <h3>Building Occupancy</h3>
+        <h3>Girls Hostel Building Occupancy</h3>
         <canvas id="buildingChart"></canvas>
       </div>
     </div>
 
     <div class="defaultersPanel">
-      <h2>🏆 Top 10 Fee Defaulters</h2>
+      <h2>🏆 Girls Hostel Top 10 Fee Defaulters</h2>
       <div id="topDefaulters"></div>
     </div>
 
     <div class="inputBox">
-      <input id="name" placeholder="👨‍🎓 Student Name">
+      <input id="name" placeholder="👧 Student Name">
       <input id="room" placeholder="🏠 Room Number / DORM / NB201">
       <input id="bed" placeholder="🛏 Bed Number">
       <button class="btn primary" onclick="addStudent()">+ Allocate Bed</button>
@@ -108,7 +100,7 @@
       <input id="roomSearch" placeholder="🔍 Find Room">
       <button class="btn go" onclick="goToRoom()">Go</button>
 
-      <input id="studentSearch" placeholder="👨‍🎓 Enter Student Name">
+      <input id="studentSearch" placeholder="👧 Enter Student Name">
       <button onclick="findStudent()">🔍 Find Student</button>
 
       <button onclick="window.open('/download-fees-report')">
@@ -116,18 +108,18 @@
       </button>
     </div>
 
-    <h2 id="sakhalaHostel" class="sectionTitle">
-      🏚 SHRI MOHANLALJI C. SAKHALA VIDYARTHI CHHATRALAYA
+    <h2 id="girlsOldHostel" class="sectionTitle">
+      🏚 Girls Hostel Old Building
     </h2>
     <div id="oldBuildingTable"></div>
 
-    <h2 id="dhariwalHostel" class="sectionTitle">
-      🏢 SHRI PRAKASHJI R DHARIWAL JAIN HOSTEL
+    <h2 id="girlsNewHostel" class="sectionTitle">
+      🏢 Girls Hostel New Building
     </h2>
     <div id="newBuildingTable"></div>
 
-    <h2 id="dormHostel" class="sectionTitle">
-      🛏 SHRI MOHANLALJI C. SAKHALA VIDYARTHI CHHATRALAYA
+    <h2 id="girlsDormHostel" class="sectionTitle">
+      🛏 Girls Hostel Dorm Section
     </h2>
     <div id="dormTable"></div>
   </div>
@@ -154,8 +146,7 @@
   </div>
 </div>
 
-<script src="script.js"></script>
-
+<script src="girls.js"></script>
 <script>
 function logout() {
   localStorage.removeItem("loggedIn");

@@ -6,8 +6,11 @@ const PDFDocument = require("pdfkit");
 
 const app = express();
 
-const DATA_FILE = path.join(__dirname, "students.json");
-const EXCEL_FILE = path.join(__dirname, "Fees Details 2024-25.xlsx");
+const BOYS_DATA_FILE = path.join(__dirname, "students.json");
+const GIRLS_DATA_FILE = path.join(__dirname, "girls-students.json");
+
+const BOYS_EXCEL_FILE = path.join(__dirname, "Fees Details 2024-25.xlsx");
+const GIRLS_EXCEL_FILE = path.join(__dirname, "Girls Hostel.xlsx");
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
@@ -23,20 +26,24 @@ function getRoomValue(value) {
 }
 
 function isVacantName(name) {
-  return clean(name).toUpperCase().includes("VACATE") ||
-         clean(name).toUpperCase().includes("VACANT");
+  const value = clean(name).toUpperCase();
+
+  return value.includes("VACATE") || value.includes("VACANT");
 }
 
-function loadStudentsFromExcel() {
-  if (!fs.existsSync(EXCEL_FILE)) {
-    console.log("Excel file not found:", EXCEL_FILE);
+function readExcelFile(filePath) {
+  if (!fs.existsSync(filePath)) {
+    console.log("Excel file not found:", filePath);
     return [];
   }
 
-  const workbook = XLSX.readFile(EXCEL_FILE);
+  const workbook = XLSX.readFile(filePath);
   const sheetName = workbook.SheetNames[0];
   const sheet = workbook.Sheets[sheetName];
-  const rows = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+
+  const rows = XLSX.utils.sheet_to_json(sheet, {
+    header: 1
+  });
 
   const students = [];
   let id = 1;
@@ -51,7 +58,16 @@ function loadStudentsFromExcel() {
     const paymentReceived = row[6];
 
     if (!roomNo || !bed || !name) return;
-    if (clean(name).toUpperCase().includes("NAME OF THE STUDENTS")) return;
+
+    const upperName = clean(name).toUpperCase();
+
+    if (
+      upperName.includes("NAME OF THE STUDENTS") ||
+      upperName.includes("STUDENT NAME") ||
+      upperName === "NAME"
+    ) {
+      return;
+    }
 
     students.push({
       id: id++,
@@ -69,38 +85,92 @@ function loadStudentsFromExcel() {
   return students;
 }
 
-function readStudents() {
-  if (!fs.existsSync(DATA_FILE)) {
-    const initial = loadStudentsFromExcel();
-    fs.writeFileSync(DATA_FILE, JSON.stringify(initial, null, 2));
-    return initial;
+function readJsonFile(filePath, fallback = []) {
+  if (!fs.existsSync(filePath)) {
+    fs.writeFileSync(filePath, JSON.stringify(fallback, null, 2));
+    return fallback;
   }
 
-  return JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
+  return JSON.parse(fs.readFileSync(filePath, "utf8"));
 }
 
-function saveStudents(data) {
-  fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
+function saveJsonFile(filePath, data) {
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
 }
 
-let students = readStudents();
+function getNextId(data) {
+  if (!data.length) return 1;
+
+  return Math.max(...data.map(s => Number(s.id) || 0)) + 1;
+}
+
+let students = readJsonFile(BOYS_DATA_FILE, readExcelFile(BOYS_EXCEL_FILE));
+let girlsStudents = readJsonFile(
+  GIRLS_DATA_FILE,
+  readExcelFile(GIRLS_EXCEL_FILE)
+);
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
+
+/* BOYS ROUTES */
 
 app.get("/students", (req, res) => {
   res.json(students);
 });
 
 app.post("/add", (req, res) => {
-  const { name, room, bed, mobile, city, outstandingFees, paymentReceived } = req.body;
+  handleAddStudent(req, res, students, BOYS_DATA_FILE);
+});
+
+app.put("/update/:id", (req, res) => {
+  handleUpdateStudent(req, res, students, BOYS_DATA_FILE);
+});
+
+app.delete("/delete/:id", (req, res) => {
+  handleDeleteStudent(req, res, students, BOYS_DATA_FILE);
+});
+
+/* GIRLS ROUTES */
+
+app.get("/girls-students", (req, res) => {
+  res.json(girlsStudents);
+});
+
+app.post("/add-girl", (req, res) => {
+  handleAddStudent(req, res, girlsStudents, GIRLS_DATA_FILE);
+});
+
+app.put("/update-girl/:id", (req, res) => {
+  handleUpdateStudent(req, res, girlsStudents, GIRLS_DATA_FILE);
+});
+
+app.delete("/delete-girl/:id", (req, res) => {
+  handleDeleteStudent(req, res, girlsStudents, GIRLS_DATA_FILE);
+});
+
+/* COMMON FUNCTIONS */
+
+function handleAddStudent(req, res, dataArray, filePath) {
+  const {
+    name,
+    room,
+    bed,
+    mobile,
+    city,
+    outstandingFees,
+    paymentReceived
+  } = req.body;
 
   if (!name || !room || !bed) {
-    return res.json({ success: false, message: "Name, room and bed are required" });
+    return res.json({
+      success: false,
+      message: "Name, room and bed are required"
+    });
   }
 
-  const existingBed = students.find(
+  const existingBed = dataArray.find(
     s => String(s.room) === String(room) && String(s.bed) === String(bed)
   );
 
@@ -108,16 +178,24 @@ app.post("/add", (req, res) => {
     existingBed.name = clean(name);
     existingBed.mobile = clean(mobile || existingBed.mobile);
     existingBed.city = clean(city || existingBed.city);
-    existingBed.outstandingFees = clean(outstandingFees || existingBed.outstandingFees || "0");
-    existingBed.paymentReceived = clean(paymentReceived || existingBed.paymentReceived || "0");
+    existingBed.outstandingFees = clean(
+      outstandingFees || existingBed.outstandingFees || "0"
+    );
+    existingBed.paymentReceived = clean(
+      paymentReceived || existingBed.paymentReceived || "0"
+    );
     existingBed.vacant = false;
 
-    saveStudents(students);
-    return res.json({ success: true, student: existingBed });
+    saveJsonFile(filePath, dataArray);
+
+    return res.json({
+      success: true,
+      student: existingBed
+    });
   }
 
   const newStudent = {
-    id: Date.now(),
+    id: getNextId(dataArray),
     room: getRoomValue(room),
     bed: clean(bed),
     name: clean(name),
@@ -128,36 +206,56 @@ app.post("/add", (req, res) => {
     vacant: false
   };
 
-  students.push(newStudent);
-  saveStudents(students);
+  dataArray.push(newStudent);
+  saveJsonFile(filePath, dataArray);
 
-  res.json({ success: true, student: newStudent });
-});
+  res.json({
+    success: true,
+    student: newStudent
+  });
+}
 
-app.put("/update/:id", (req, res) => {
-  const student = students.find(s => String(s.id) === String(req.params.id));
+function handleUpdateStudent(req, res, dataArray, filePath) {
+  const student = dataArray.find(
+    s => String(s.id) === String(req.params.id)
+  );
 
   if (!student) {
-    return res.json({ success: false, message: "Student not found" });
+    return res.json({
+      success: false,
+      message: "Student not found"
+    });
   }
 
   student.name = clean(req.body.name || student.name);
   student.mobile = clean(req.body.mobile || student.mobile);
   student.city = clean(req.body.city || student.city);
-  student.outstandingFees = clean(req.body.outstandingFees || student.outstandingFees || "0");
-  student.paymentReceived = clean(req.body.paymentReceived || student.paymentReceived || "0");
+  student.outstandingFees = clean(
+    req.body.outstandingFees || student.outstandingFees || "0"
+  );
+  student.paymentReceived = clean(
+    req.body.paymentReceived || student.paymentReceived || "0"
+  );
   student.vacant = isVacantName(student.name);
 
-  saveStudents(students);
+  saveJsonFile(filePath, dataArray);
 
-  res.json({ success: true, updatedStudent: student });
-});
+  res.json({
+    success: true,
+    updatedStudent: student
+  });
+}
 
-app.delete("/delete/:id", (req, res) => {
-  const student = students.find(s => String(s.id) === String(req.params.id));
+function handleDeleteStudent(req, res, dataArray, filePath) {
+  const student = dataArray.find(
+    s => String(s.id) === String(req.params.id)
+  );
 
   if (!student) {
-    return res.json({ success: false, message: "Student not found" });
+    return res.json({
+      success: false,
+      message: "Student not found"
+    });
   }
 
   student.name = "VACATE";
@@ -167,25 +265,55 @@ app.delete("/delete/:id", (req, res) => {
   student.paymentReceived = "0";
   student.vacant = true;
 
-  saveStudents(students);
+  saveJsonFile(filePath, dataArray);
 
-  res.json({ success: true, updatedStudent: student });
-});
+  res.json({
+    success: true,
+    updatedStudent: student
+  });
+}
+
+/* PDF REPORTS */
 
 app.get("/download-fees-report", (req, res) => {
-  const doc = new PDFDocument({ margin: 40 });
+  generateFeesPDF(
+    res,
+    "Shree Jain Oswal Boarding Management",
+    "Boys Hostel Fees Report",
+    "Boys_Fees_Report.pdf",
+    students
+  );
+});
 
-  res.setHeader("Content-Disposition", "attachment; filename=Fees_Report.pdf");
+app.get("/download-girls-fees-report", (req, res) => {
+  generateFeesPDF(
+    res,
+    "Girls Hostel Management",
+    "Girls Hostel Fees Report",
+    "Girls_Fees_Report.pdf",
+    girlsStudents
+  );
+});
+
+function generateFeesPDF(res, title, subtitle, filename, data) {
+  const doc = new PDFDocument({
+    margin: 40
+  });
+
+  res.setHeader("Content-Disposition", `attachment; filename=${filename}`);
   res.setHeader("Content-Type", "application/pdf");
 
   doc.pipe(res);
 
-  doc.fontSize(18).text("Shree Jain Oswal Boarding Management", { align: "center" });
+  doc.fontSize(18).text(title, {
+    align: "center"
+  });
+
   doc.moveDown();
-  doc.fontSize(15).text("Fees Report");
+  doc.fontSize(15).text(subtitle);
   doc.moveDown();
 
-  students.forEach(s => {
+  data.forEach(s => {
     if (s.vacant) return;
 
     doc.fontSize(10).text(
@@ -194,7 +322,7 @@ app.get("/download-fees-report", (req, res) => {
   });
 
   doc.end();
-});
+}
 
 const PORT = process.env.PORT || 3000;
 
