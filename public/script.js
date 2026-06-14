@@ -70,16 +70,16 @@ document.getElementById("totalBeds").innerText = totalBeds;
   document.getElementById("totalReceived").innerText =
     totalReceived.toLocaleString();
 
-  showEmptyBeds(vacantList);
+  showVacateBeds(vacantList);
   showRoomCards(students);
   showBuildingChart(allStudents);
   showTopDefaulters(allStudents);
 }
 
-function showEmptyBeds(vacantList) {
-  const emptyBedsDiv = document.getElementById("emptyBedsList");
+function showVacateBeds(vacantList) {
+  const vacateBedsDiv = document.getElementById("vacateBedsList");
 
-  emptyBedsDiv.innerHTML = vacantList.length
+  vacateBedsDiv.innerHTML = vacantList.length
     ? vacantList
         .sort((a, b) =>
           String(a.room).localeCompare(String(b.room), undefined, {
