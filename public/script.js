@@ -48,7 +48,9 @@ function showStudents(students) {
   const occupiedBeds = allStudents.filter(s => !isVacant(s)).length;
   const vacantList = allStudents.filter(s => isVacant(s));
 
-  document.getElementById("total").innerText = allStudents.length;
+  const totalBeds = allStudents.length;
+
+document.getElementById("totalBeds").innerText = totalBeds;
   document.getElementById("occupied").innerText = occupiedBeds;
   document.getElementById("available").innerText = vacantList.length;
 
